@@ -1,0 +1,46 @@
+/* --- Laptop Landscape --- */
+@media only screen and (max-width: 1366px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+/* --- Tablet Landscape --- */
+@media only screen and (max-width: 1199px) {
+  .container {
+    max-width: clamp(940px, 95vw, 1100px);
+  }
+
+  .columns__wrap-container.two-columns {
+    grid-template: 1fr/1fr;
+  }
+
+  .template-box {
+    flex-direction: column;
+  }
+}
+/* --- Tablet --- */
+@media only screen and (max-width: 991px) {
+  .container {
+    max-width: clamp(750px, 95vw, 950px);
+  }
+}
+/* --- Mobile Phones L--- */
+@media only screen and (max-width: 767px) {
+  .container {
+    max-width: calc(100% - 20px);
+  }
+
+  .contacts-form__bottom {
+    grid-template: 1fr 1fr/1fr 1fr;
+  }
+}
+/* --- Mobile Phones M--- */
+@media only screen and (max-width: 575px) {
+  .contacts-form__top {
+    grid-template: 1fr 1fr/1fr;
+  }
+  .contacts-form__bottom {
+    grid-template: 1fr 1fr 1fr/1fr;
+  }
+}
+/* --- Mobile Phones S--- */
