@@ -128,6 +128,7 @@ textarea {
   background-clip: padding-box;
   font-family: inherit;
   border: none;
+  border-radius: 0;
 }
 input::-moz-placeholder, textarea::-moz-placeholder {
   transition: opacity 0.3s;
@@ -184,7 +185,7 @@ a:hover {
 /* Global CSS rules */
 /* Containers rules */
 .main-container {
-  padding: 100px 0 155px 0;
+  padding: 100px 0;
   transition: padding 0.3s;
 }
 .main-container.is-active {
@@ -335,7 +336,7 @@ a:hover {
   padding: 0 15px;
   margin: 0 auto;
   display: grid;
-  grid-template: 1fr/360px minmax(450px, 820px) 420px;
+  grid-template: 1fr/clamp(300px, 25vw, 360px) minmax(450px, 820px) clamp(300px, 25vw, 420px);
   gap: 20px;
   width: 100%;
 }
@@ -345,11 +346,13 @@ a:hover {
 .columns__left-inner, .columns__right-inner {
   position: fixed;
   top: 100px;
-  width: 360px;
   height: 100%;
 }
+.columns__left-inner {
+  width: clamp(300px, 25vw, 360px);
+}
 .columns__right-inner {
-  width: 420px;
+  width: clamp(300px, 25vw, 420px);
 }
 .columns__content {
   height: 85vh;
@@ -727,6 +730,7 @@ a:hover {
   display: flex;
   align-items: center;
   padding: 16px;
+  gap: 5px;
 }
 .request__user {
   display: flex;
@@ -845,29 +849,29 @@ a:hover {
   font-weight: 500;
 }
 
-.advertise__top {
+.commercial__top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 24px;
 }
-.advertise__link {
+.commercial__link {
   display: flex;
   align-items: center;
   gap: 18px;
 }
-.advertise__img {
+.commercial__img {
   max-width: 100px;
   max-height: 100px;
   width: 100%;
   height: 100%;
 }
-.advertise__text p {
+.commercial__text p {
   font-weight: 500;
   font-size: 17px;
   line-height: 23px;
 }
-.advertise__text span {
+.commercial__text span {
   font-weight: 400;
   font-size: 14px;
   line-height: 23px;
@@ -1157,6 +1161,7 @@ a:hover {
   padding-bottom: 18px;
   border-bottom: var(--main-border);
   font-weight: 500;
+  gap: 20px;
 }
 .post__actions-buttons {
   display: flex;
@@ -1180,6 +1185,9 @@ a:hover {
   display: flex;
   align-items: center;
   gap: clamp(15px, 4vw, 44px);
+}
+.post__actions-dislike {
+  margin-right: auto;
 }
 .post__ratings, .post__reactions {
   display: flex;
@@ -1235,7 +1243,6 @@ a:hover {
   display: flex;
   gap: 12px;
   margin-bottom: 24px;
-  max-height: 420px;
 }
 .post--grid-view .post__image-md, .post--grid-view .post__image-sm div {
   border-radius: 6px;
@@ -1248,6 +1255,7 @@ a:hover {
 }
 .post--grid-view .post__image img {
   height: 100%;
+  width: 100%;
 }
 .post__vertical-content {
   margin-bottom: 22px;
@@ -1258,10 +1266,10 @@ a:hover {
   align-items: center;
 }
 .post__vertical-file {
-  max-width: 205px;
-  width: 100%;
+  width: clamp(150px, 15vw, 205px);
   border-radius: 6px;
   overflow: hidden;
+  flex-shrink: 0;
 }
 .post__vertical-text p {
   font-weight: 400;
@@ -1415,7 +1423,7 @@ a:hover {
 .comments__comment-wrap {
   display: flex;
   gap: 15px;
-  padding-right: 60px;
+  padding-right: clamp(20px, 4vw, 60px);
   position: relative;
 }
 .comments__comment-wrap.is-commented {
@@ -2915,7 +2923,7 @@ a:hover {
 /* Burger css */
 .burger {
   cursor: pointer;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   width: 22px;
@@ -3020,14 +3028,20 @@ a:hover {
 .header__inner {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 10px;
 }
 .header__logo {
-  margin-right: clamp(50px, 8vw, 140px);
+  margin-right: clamp(10px, 7vw, 140px);
   font-size: 33px;
   font-weight: 700;
-  width: clamp(110px, 10vw, 175px);
+  width: 175px;
   flex-shrink: 0;
+}
+.header__menu-wrap {
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 .header__nav {
   display: flex;

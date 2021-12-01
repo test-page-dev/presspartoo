@@ -241,13 +241,25 @@ $(function () {
 		let bostBox = $('.post__list ');
 
 		$(window).on('scroll', function () {
-			if ($(this).scrollTop() > 10) {
-				actionFixed.addClass('is-active');
-				bostBox.addClass('is-active');
-			} else {
-				actionFixed.removeClass('is-active');
-				bostBox.removeClass('is-active');
+			if ($(window).width() >= 1024) {
+				if ($(this).scrollTop() > 10) {
+					actionFixed.addClass('is-active');
+					bostBox.addClass('is-active');
+				} else {
+					actionFixed.removeClass('is-active');
+					bostBox.removeClass('is-active');
+				}
 			}
+			// else {
+			// 	if ($(this).scrollTop() > 900) {
+			// 		actionFixed.addClass('is-active');
+			// 		bostBox.addClass('is-active');
+			// 	} else {
+			// 		actionFixed.removeClass('is-active');
+			// 		bostBox.removeClass('is-active');
+			// 	}
+			// }
+
 		});
 	}
 
