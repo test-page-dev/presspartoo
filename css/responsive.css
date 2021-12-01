@@ -37,6 +37,10 @@
   .comments__comment-wrap {
     padding-right: 0;
   }
+
+  .profile-card__buttons {
+    flex-direction: column;
+  }
 }
 /* --- Tablet Landscape --- */
 @media only screen and (max-width: 1200px) {
@@ -151,7 +155,7 @@
     left: 12px;
   }
   .comments__item.third-line-comment::after {
-    width: 15px;
+    width: 16px;
     left: 12px;
   }
   .comments__comment-wrap {
@@ -167,6 +171,9 @@
     grid-template: 1fr 1fr 1fr/1fr;
   }
 
+  .main__actions-tab {
+    padding: 20px;
+  }
   .main__actions-tab span {
     display: none;
   }
@@ -199,6 +206,42 @@
   .comments__content-top {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .friends-box__top {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    gap: 30px;
+  }
+  .friends-box__action-dots {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .friends-box__filter {
+    margin-left: 0;
+    width: 100%;
+  }
+  .friends-box__list {
+    grid-template: auto/1fr;
+  }
+
+  .request__user {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .request__actions {
+    margin-left: 0;
+  }
+  .request__list ul li {
+    flex-direction: column;
+  }
+
+  .settings-box__form-inner {
+    grid-template: auto/1fr;
+    gap: 20px;
   }
 }
 /* --- Mobile Phones S--- */

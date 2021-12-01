@@ -238,25 +238,28 @@ $(function () {
 	// Fixed actions box on scroll
 	if ($('.main__actions').length) {
 		let actionFixed = $('.main__actions');
-		let bostBox = $('.post__list ');
+		let postBox = $('.post__list ');
+		let postTextarea = $('.post__profile-textarea');
 
 		$(window).on('scroll', function () {
 			if ($(window).width() >= 1024) {
 				if ($(this).scrollTop() > 10) {
 					actionFixed.addClass('is-active');
-					bostBox.addClass('is-active');
+					postBox.addClass('is-active');
+					postTextarea.addClass('is-active');
 				} else {
 					actionFixed.removeClass('is-active');
-					bostBox.removeClass('is-active');
+					postBox.removeClass('is-active');
+					postTextarea.removeClass('is-active');
 				}
 			}
 			// else {
 			// 	if ($(this).scrollTop() > 900) {
 			// 		actionFixed.addClass('is-active');
-			// 		bostBox.addClass('is-active');
+			// 		postBox.addClass('is-active');
 			// 	} else {
 			// 		actionFixed.removeClass('is-active');
-			// 		bostBox.removeClass('is-active');
+			// 		postBox.removeClass('is-active');
 			// 	}
 			// }
 
