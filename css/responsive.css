@@ -35,7 +35,7 @@
   }
 
   .comments__comment-wrap {
-    padding-right: 40px;
+    padding-right: 0;
   }
 }
 /* --- Tablet Landscape --- */
@@ -128,6 +128,35 @@
     flex-wrap: wrap;
     gap: 20px;
   }
+
+  .comments__replies .comments__avatar {
+    width: 25px;
+    height: 25px;
+  }
+  .comments__replies-item {
+    padding-left: 30px;
+  }
+  .comments__replies-item::after {
+    width: 7px;
+    top: 13px;
+  }
+  .comments__replies-item::before {
+    top: -49986px;
+  }
+  .comments__item.second-line-comment .comments__comment-wrap.is-commented::before {
+    left: 12px;
+    top: 27px;
+  }
+  .comments__item.third-line-comment::before {
+    left: 12px;
+  }
+  .comments__item.third-line-comment::after {
+    width: 15px;
+    left: 12px;
+  }
+  .comments__comment-wrap {
+    gap: 10px;
+  }
 }
 /* --- Mobile Phones M--- */
 @media only screen and (max-width: 575px) {
@@ -174,6 +203,10 @@
 }
 /* --- Mobile Phones S--- */
 @media only screen and (max-width: 400px) {
+  .columns__wrap-container {
+    padding: 0 10px;
+  }
+
   .post__header {
     position: relative;
     flex-direction: column;

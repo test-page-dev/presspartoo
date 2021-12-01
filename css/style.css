@@ -1483,8 +1483,9 @@ a:hover {
 .comments__text {
   color: var(--content-color);
   font-weight: 400;
-  line-height: 23px;
+  line-height: clamp(17px, 2vw, 23px);
   margin-bottom: 8px;
+  font-size: clamp(14px, 1vw, 16px);
 }
 .comments__avatar {
   width: 43px;
@@ -1595,7 +1596,7 @@ a:hover {
   top: 21px;
 }
 .comments__replies .comments__text {
-  font-size: 15px;
+  font-size: clamp(14px, 1vw, 15px);
 }
 
 .profile-card__photo {
