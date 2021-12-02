@@ -1,10 +1,7 @@
 /* --- Laptop Landscape --- */
 @media only screen and (max-width: 1366px) {
-  .post__actions-bottom {
-    flex-direction: column;
-  }
-  .post__actions-right, .post__actions-buttons {
-    justify-content: space-between;
+  .post__actions-right {
+    font-size: 0;
   }
   .post__vertical-item {
     align-items: flex-start;
@@ -245,11 +242,6 @@
     display: none;
   }
 
-  .post-info {
-    flex-direction: column;
-    gap: 20px;
-  }
-
   .post__vertical-item {
     flex-direction: column;
   }
@@ -258,6 +250,18 @@
   }
   .post__vertical-file img {
     width: 100%;
+  }
+  .post__actions-comment {
+    display: none;
+  }
+  .post__actions-top {
+    font-size: 13px;
+  }
+  .post__actions-buttons {
+    font-size: 13px;
+  }
+  .post__ratings-dislikes span:nth-child(2), .post__ratings-likes span:nth-child(2) {
+    display: none;
   }
 
   .hot-news__list-link {

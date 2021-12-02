@@ -1190,7 +1190,7 @@ a:hover {
 .post__actions-right {
   display: flex;
   align-items: center;
-  gap: clamp(15px, 4vw, 44px);
+  gap: clamp(15px, 3vw, 44px);
 }
 .post__actions-dislike {
   margin-right: auto;
@@ -1200,7 +1200,7 @@ a:hover {
   align-items: center;
 }
 .post__ratings {
-  gap: 17px;
+  gap: clamp(10px, 1vw, 17px);
 }
 .post__ratings-likes, .post__ratings-dislikes {
   padding-left: 23px;
