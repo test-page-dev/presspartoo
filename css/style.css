@@ -3052,6 +3052,8 @@ a:hover {
   height: 80px;
 }
 .header__logo {
+  display: flex;
+  align-items: center;
   margin-right: clamp(10px, 7vw, 140px);
   font-size: 33px;
   font-weight: 700;
