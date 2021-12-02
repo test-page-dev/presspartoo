@@ -445,7 +445,7 @@ a:hover {
   transition: color 0.2s;
   cursor: pointer;
   width: 25px;
-  height: 23px;
+  height: 24px;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -1139,6 +1139,11 @@ a:hover {
   padding-bottom: 24px;
   border-bottom: var(--main-border);
   margin-bottom: 24px;
+}
+.post__header .user__name {
+  display: flex;
+  align-items: center;
+  gap: 11px;
 }
 .post__title {
   font-weight: 700;

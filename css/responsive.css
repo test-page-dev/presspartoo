@@ -323,18 +323,15 @@
 
   .post__header {
     position: relative;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .post__header .action-dots--bordered {
-    position: absolute;
-    top: 0;
-    right: 0;
   }
   .post__header .time-box__count-dotted {
     padding-left: 0;
   }
   .post__header .time-box__count-dotted::before {
     display: none;
+  }
+  .post__header .user__name {
+    flex-direction: column;
+    gap: 0;
   }
 }
