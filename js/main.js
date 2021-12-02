@@ -4,18 +4,9 @@ $(function () {
 	// Burger & sidebar
 	if ($('.burger').length) {
 		let burgerWrap = $('.burger');
-		let mainContainer = $('.main-container');
-		let columnsWrap = $('.columns__wrap');
-		let sidebar = $('.sidebar');
-		let sidebarName = $('.sidebar__item-name');
-		let sidebarLabel = $('.sidebar__item-label');
 
 		burgerWrap.on('click', function () {
-			sidebarName.fadeToggle(200);
-			sidebarLabel.fadeToggle(200);
-			columnsWrap.toggleClass('is-active');
-			sidebar.toggleClass('is-hidden');
-			mainContainer.toggleClass('is-active');
+			$('.columns__left').slideToggle(200);
 		})
 	}
 
@@ -77,6 +68,33 @@ $(function () {
 		}
 
 		custom_select();
+	}
+
+	// Header search
+	if ($('.header__search').length) {
+		let headerSearchDesktop = $('.header__search');
+		let headerSearchMobile = $('.header__search--mobile');
+		let headerSearchClear = $('.header__search-clear');
+		let headerSearchInput = $('.header__search-input');
+
+		headerSearchInput.on('input change', function () {
+			if ($(this).val() != 0) {
+				headerSearchClear.addClass('is-active');
+			} else {
+				headerSearchClear.removeClass('is-active');
+			}
+		});
+
+		headerSearchMobile.on('click', function () {
+			$(this).toggleClass('is-active');
+			headerSearchDesktop.toggleClass('is-active');
+			$('.header__actions').toggle();
+			$('.header__user').toggle();
+			$('.header__settings-wrap').toggle();
+			$('.burger').toggle();
+			$('.header__menu-wrap').toggleClass('is-active');
+		});
+
 	}
 
 	// Header popups
