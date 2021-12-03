@@ -219,16 +219,14 @@ $(function () {
 		passShowButton.on('click', function () {
 			let passShowIcon = $('.password-input__show-icon');
 			let passInputPrev = $(this).prev('.password-input');
-			passInputPrev
 
-			passShowIcon.toggleClass('is-hidden');
+			$(this).find(passShowIcon).toggleClass('is-hidden');
 
 			if (passInputPrev.attr('type') == 'password') {
 				passInputPrev.attr('type', 'text');
 			} else {
 				passInputPrev.attr('type', 'password');
 			}
-
 		});
 	}
 

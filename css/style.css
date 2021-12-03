@@ -1272,7 +1272,7 @@ a:hover {
 }
 
 /* Login */
-.login {
+.entrance {
   background-color: var(--blue-background);
   min-height: 100%;
   display: flex;
@@ -1283,12 +1283,15 @@ a:hover {
   font-weight: 400;
   color: var(--content-color);
 }
-.login__container {
-  padding: 50px 10px;
+.entrance__container {
+  padding: clamp(10px, 4vw, 50px) 10px;
   display: grid;
   grid-template: 1fr/clamp(450px, 35vw, 460px) clamp(250px, 35vw, 460px);
 }
-.login__left {
+.entrance__container--registration {
+  grid-template: 1fr/1fr;
+}
+.entrance__left {
   background-color: #fff;
   padding: clamp(40px, 4vw, 59px) clamp(20px, 4vw, 52px) clamp(40px, 4vw, 47px) clamp(20px, 4vw, 45px);
   border-radius: 6px 0px 0px 6px;
@@ -1296,40 +1299,40 @@ a:hover {
   flex-direction: column;
   align-items: center;
 }
-.login__logo {
+.entrance__logo {
   margin-bottom: 14px;
 }
-.login__text {
+.entrance__text {
   font-size: 16px;
   color: var(--content-color);
   max-width: 355px;
   text-align: center;
   margin-bottom: 32px;
 }
-.login__form {
+.entrance__form {
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 20px;
   margin-bottom: 40px;
 }
-.login__form input[type=text] {
+.entrance__form input[type=text] {
   color: var(--main-dark-blue-color);
 }
-.login__form input[type=text]::-moz-placeholder {
+.entrance__form input[type=text]::-moz-placeholder {
   color: var(--light-text-color);
 }
-.login__form input[type=text]:-ms-input-placeholder {
+.entrance__form input[type=text]:-ms-input-placeholder {
   color: var(--light-text-color);
 }
-.login__form input[type=text]::placeholder {
+.entrance__form input[type=text]::placeholder {
   color: var(--light-text-color);
 }
-.login__form input[type=submit] {
+.entrance__form input[type=submit] {
   font-weight: 700;
   font-size: 16px;
 }
-.login__actions {
+.entrance__actions {
   margin: 5px 0 4px;
   display: flex;
   gap: 15px;
@@ -1337,20 +1340,20 @@ a:hover {
   align-items: center;
   justify-content: space-between;
 }
-.login__forgot {
+.entrance__forgot {
   color: var(--content-color);
   transition: color 0.2s;
 }
-.login__forgot:hover {
+.entrance__forgot:hover {
   color: var(--main-dark-blue-color);
 }
-.login__socials {
+.entrance__socials {
   width: 100%;
   border-top: 1px solid #DBE2F0;
   padding-top: 40px;
   position: relative;
 }
-.login__socials-label {
+.entrance__socials-label {
   position: absolute;
   top: -14px;
   left: 50%;
@@ -1359,43 +1362,43 @@ a:hover {
   padding: 0 15px;
   white-space: nowrap;
 }
-.login__socials-links {
+.entrance__socials-links {
   margin-bottom: 30px;
 }
-.login__socials-links ul {
+.entrance__socials-links ul {
   display: grid;
   grid-template: 1fr/repeat(3, 1fr);
   gap: 15px;
 }
-.login__socials-links a {
+.entrance__socials-links a {
   width: 100%;
   height: 100%;
   display: inline-block;
   background-repeat: no-repeat;
   background-position: center;
 }
-.login__socials-links li {
+.entrance__socials-links li {
   height: 62px;
   background: #F8F9FC;
   border-radius: 6px;
 }
-.login__socials-links li:nth-child(1) a {
+.entrance__socials-links li:nth-child(1) a {
   background-size: 14px;
   background-image: url(../img/icons/facebook-icon.svg);
 }
-.login__socials-links li:nth-child(2) a {
+.entrance__socials-links li:nth-child(2) a {
   background-size: 25px;
   background-image: url(../img/icons/twitter-icon.svg);
 }
-.login__socials-links li:nth-child(3) a {
+.entrance__socials-links li:nth-child(3) a {
   background-size: 23px;
   background-image: url(../img/icons/google-icon.svg);
 }
-.login__to-sign a span {
+.entrance__to a span {
   font-weight: 700;
   color: var(--main-dark-blue-color);
 }
-.login__right {
+.entrance__right {
   border-radius: 0 6px 6px 0;
   position: relative;
   background-repeat: no-repeat;
@@ -1403,7 +1406,7 @@ a:hover {
   background-size: cover;
   background-image: url(../img/login-img.webp);
 }
-.login__right::before, .login__right::after {
+.entrance__right::before, .entrance__right::after {
   position: absolute;
   content: "";
   background-color: #fff;
@@ -1414,12 +1417,12 @@ a:hover {
   background-position: center;
   background-size: 50%;
 }
-.login__right::before {
+.entrance__right::before {
   bottom: clamp(50px, 8vw, 101px);
   left: clamp(18px, 3vw, 57px);
   background-image: url(../img/icons/add-icon.svg);
 }
-.login__right::after {
+.entrance__right::after {
   top: clamp(50px, 8vw, 126px);
   right: 18px;
   background-image: url(../img/icons/gesture-icon.svg);
@@ -2319,7 +2322,8 @@ a:hover {
   grid-template: 1fr/1.65fr 1fr 0.5fr;
   gap: clamp(15px, 2vw, 30px);
 }
-.contacts-form__button {
+
+.form__button {
   font-weight: 700;
   font-size: 15px;
   line-height: 24px;
@@ -2330,7 +2334,7 @@ a:hover {
   font-family: inherit;
   transition: background-color 0.2s;
 }
-.contacts-form__button:hover {
+.form__button:hover {
   background-color: var(--main-green-hover-color);
 }
 

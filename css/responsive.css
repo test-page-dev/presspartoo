@@ -135,13 +135,14 @@
 }
 /* --- Mobile Phones L--- */
 @media only screen and (max-width: 767px) {
-  .login__container {
-    grid-template: auto 350px/1fr;
+  .entrance__container {
+    grid-template: 1fr/1fr;
   }
-  .login__left {
-    border-radius: 6px 6px 0 0;
+  .entrance__left {
+    border-radius: 6px;
   }
-  .login__right {
+  .entrance__right {
+    display: none;
     border-radius: 0 0 6px 6px;
   }
 

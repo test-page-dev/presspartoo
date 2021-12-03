@@ -7,7 +7,7 @@
 	<link rel="shortcut icon" href="#" type="image/x-icon">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="description" content="#">
-	<title>Keskilya - Login</title>
+	<title>Keskilya - Registration</title>
 	<link rel="stylesheet" href="css/icons-font.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
@@ -17,20 +17,22 @@
 
 	<div class="entrance">
 		<div class="entrance__inner">
-			<div class="entrance__container">
+			<div class="entrance__container entrance__container--registration">
 				<div class="entrance__left">
 					<div class="entrance__logo">
 						<img src="img/entrance-logo.svg" alt="Logo">
 					</div>
 					<p class="entrance__text">
-						Enter your email address and password to
-						access admin panel.
+						Don't have an account? Create your account, it takes less than a minute
 					</p>
 					<form class="entrance__form" action="#">
 						<label class="input-wrap">
+							Full Name
+							<input class="text-input input-global" type="text" placeholder="Enter Your Name" required>
+						</label>
+						<label class="input-wrap">
 							Email address
-							<input class="text-input input-global" type="text" placeholder="Enter Your Text Here"
-								required>
+							<input class="text-input input-global" type="text" placeholder="Enter your email" required>
 						</label>
 						<label class="input-wrap">
 							Password
@@ -43,23 +45,22 @@
 								</span>
 							</span>
 						</label>
-						<div class="entrance__actions">
-							<label class="check-input">
-								<input class="check-input__check" type="checkbox" checked="">
-								<span class="check-input__style"></span>
-								Remember me
-							</label>
-							<div class="entrance__forgot">
-								<a href="#">
-									Forgot your password?
-								</a>
-							</div>
-						</div>
-						<input class="form__button" type="submit" value="Log in">
+						<label class="input-wrap">
+							Password Confirmation
+							<span class="password-input__wrap">
+								<input class="password-input input-global" type="password"
+									placeholder="Enter your password" required>
+								<span class="password-input__show-btn is-hidden">
+									<i class="password-input__show-icon --ic-visible"></i>
+									<i class="password-input__show-icon --ic-not-visible is-hidden"></i>
+								</span>
+							</span>
+						</label>
+						<input class="form__button entrance__button--registration" type="submit" value="Registration">
 					</form>
 					<div class="entrance__socials">
 						<span class="entrance__socials-label">
-							or continue with
+							or sign up with
 						</span>
 						<div class="entrance__socials-links">
 							<ul>
@@ -76,12 +77,11 @@
 						</div>
 					</div>
 					<div class="entrance__to">
-						<a href="registration.html">
-							Don't have an account? <span>Sign Up</span>
+						<a href="#">
+							Already have account? <span>Sign In</span>
 						</a>
 					</div>
 				</div>
-				<div class="entrance__right"></div>
 			</div>
 		</div>
 	</div>
