@@ -348,12 +348,11 @@ $(function () {
 		let dropInputWrap = $('.dropdown-input__popup');
 		let dropInputButton = $('.dropdown-input__button');
 		let dropInputLink = $('.dropdown-input__popup a');
-		let dropInputIcon = $('.dropdown-input__button i');
 
 		dropInputButton.on('click', function (e) {
+			dropInputButton.removeClass('is-active');
+			$(this).addClass('is-active');
 			dropInputWrap.removeClass('is-active');
-			$('.dropdown-input__button i').removeClass('is-active');
-			$(this).find(dropInputIcon).addClass('is-active');
 			$(this).siblings('.dropdown-input__popup').addClass('is-active');
 			e.preventDefault();
 			e.stopPropagation();
@@ -361,12 +360,12 @@ $(function () {
 
 		$(document).on('click', function () {
 			dropInputWrap.removeClass('is-active');
-			dropInputIcon.removeClass('is-active');
+			dropInputButton.removeClass('is-active');
 		});
 
 		dropInputLink.on('click', function (e) {
 			dropInputWrap.removeClass('is-active');
-			dropInputIcon.removeClass('is-active');
+			dropInputButton.removeClass('is-active');
 			e.preventDefault();
 		});
 	}

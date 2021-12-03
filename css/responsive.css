@@ -116,8 +116,7 @@
   .columns__left {
     display: none;
   }
-  .columns__left .main__user-pages-like,
-.columns__left .may-know,
+  .columns__left .may-know,
 .columns__left .events,
 .columns__left .featured-video {
     display: none;
@@ -136,6 +135,16 @@
 }
 /* --- Mobile Phones L--- */
 @media only screen and (max-width: 767px) {
+  .login__container {
+    grid-template: auto 350px/1fr;
+  }
+  .login__left {
+    border-radius: 6px 6px 0 0;
+  }
+  .login__right {
+    border-radius: 0 0 6px 6px;
+  }
+
   .header__logo {
     display: none;
   }
@@ -218,6 +227,10 @@
 }
 /* --- Mobile Phones M--- */
 @media only screen and (max-width: 575px) {
+  .template-box {
+    flex-direction: column;
+  }
+
   .header__inner {
     gap: 20px;
   }
