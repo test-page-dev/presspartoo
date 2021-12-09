@@ -1,0 +1,2056 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<link rel="shortcut icon" href="#" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="#">
+	<title>Keskilya - Elements</title>
+	<link rel="stylesheet" href="css/fancy.css">
+<link rel="stylesheet" href="css/icons-font.css">
+<link rel="stylesheet" href="css/swiper.css">
+<link rel="stylesheet" href="css/kalendae.css">
+<link rel="stylesheet" href="css/plyr.css">
+<link rel="stylesheet" href="css/timepicker.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+	<div class="main-container">
+		<header class="header">
+	<div class="container">
+		<div class="header__inner">
+			<a class="header__logo" href="index.html">
+				<img src="img/main-logo.svg" alt="Logo">
+			</a>
+			<a class="header__logo--mobile" href="index.html">
+				<img src="img/mobile-logo.svg" alt="Logo">
+			</a>
+			<div class="header__menu-wrap">
+				<div class="header__nav">
+					<div class="header__nav-create">
+						<span class="popup-button">Create new</span>
+						<div class="header__nav-create-popup popup-triangle popup-global">
+							<ul>
+								<li>
+									<a href="#">Option 1</a>
+								</li>
+								<li>
+									<a href="#">Option 1</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="header__search">
+					<form action="#">
+						<input type="submit" value="">
+						<input class="header__search-input" type="text" placeholder="Search">
+						<button type="reset" class="header__search-clear"></button>
+					</form>
+				</div>
+				<div class="header__search--mobile"></div>
+				<ul class="header__actions">
+					<!-- <li class="header__fullscreen">
+						<a class="ic-fullscreen-icon" href="#"></a>
+					</li>
+					<li class="header__apps">
+						<a class="ic-apps-icon" href="#"></a>
+					</li> -->
+					<li class="header__language-wrap">
+						<a class="header__language-french popup-button" href="#"></a>
+						<div class="header__language-popup popup-triangle popup-global">
+							<ul>
+								<li>
+									<a class="header__language-english" href="#">
+										English
+									</a>
+								</li>
+								<li>
+									<a class="header__language-russian" href="#">
+										Russian
+									</a>
+								</li>
+								<li>
+									<a class="header__language-ukrainian" href="#">
+										Ukrainian
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="header__notifications">
+						<a class="--ic-notifications-icon" href="#"></a>
+						<span class="header__notifications-counter">12</span>
+					</li>
+				</ul>
+				<a class="header__user" href="profile.html">
+					<div class="user__box online-status is-online">
+						<div class="user__avatar header__user-avatar">
+							<div class="user__avatar-img blue-bg">
+								<img src="img/users/main-user.webp" alt="User photo">
+							</div>
+						</div>
+						<div class="user__name">
+							Roman
+						</div>
+					</div>
+				</a>
+				<div class="header__settings-wrap">
+					<div class="header__settings popup-button --ic-settings-icon"></div>
+					<div class="header__settings-popup popup-triangle popup-global">
+						<div class="user__box">
+							<div class="user__avatar">
+								<div class="user__avatar-img">
+									<img src="img/users/main-user.webp" alt="User photo">
+								</div>
+							</div>
+							<div class="user__name">
+								Roman Polyarush
+							</div>
+						</div>
+						<a class="header__settings-button" href="#">
+							<span class="--ic-settings-icon-black header__settings-icon">Settings</span>
+						</a>
+						<a class="header__settings-help " href="#">
+							<span class="--ic-help-icon-black header__settings-icon">Help</span>
+						</a>
+						<div class="header__settings-border"></div>
+						<a class="header__settings-exit" href="#">
+							<span class="--ic-log-out-icon-black header__settings-icon">Exit</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- Card burger -->
+<div class="burger">
+	<div class="burger__toggle">
+		<div class="burger__main">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div class="burger__cross">
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+</div><!-- Card burger -->
+		</div>
+	</div>
+</header>
+<div class="overlay"></div>
+
+		<!-- columns__wrap -->
+		<div class="columns__wrap" style="overflow: hidden;">
+			<!-- columns__wrap-container two-columns -->
+			<div class="columns__wrap-container two-columns">
+
+				<!-- Wrapper block -->
+				<div class="df-column">
+
+					<div class="global-box">
+						<h3 class="box-title">
+							Popovers
+						</h3>
+						<div style="display: flex;flex-wrap: wrap;gap: 8px;">
+
+	<div class="popover popover--popup-top">
+		<span class="popover__btn">
+			Popover on top
+		</span>
+		<p class="popover__popup popup-triangle">
+			Vivamus sagittis lacus vel augue
+			laoreet rutrum faucibus.
+		</p>
+	</div>
+
+	<div class="popover popover--popup-bottom">
+		<span class="popover__btn">
+			Popover on bottom
+		</span>
+		<p class="popover__popup popup-triangle">
+			Vivamus sagittis lacus vel augue
+			laoreet rutrum faucibus.
+		</p>
+	</div>
+
+	<div class="popover popover--popup-right">
+		<span class="popover__btn">
+			Popover on right
+		</span>
+		<p class="popover__popup popup-triangle">
+			Vivamus sagittis lacus vel augue
+			laoreet rutrum faucibus.
+		</p>
+	</div>
+
+	<div class="popover popover--popup-left">
+		<span class="popover__btn">
+			Popover on left
+		</span>
+		<p class="popover__popup popup-triangle">
+			Vivamus sagittis lacus vel augue
+			laoreet rutrum faucibus.
+		</p>
+	</div>
+
+</div>
+					</div>
+
+					<div class="global-box">
+						<h3 class="box-title">
+							Tooltips
+						</h3>
+						<div style="display: flex;flex-wrap: wrap;gap: 8px;">
+
+	<div class="tooltip tooltip--popup-top">
+		<span class="tooltip__btn">
+			Tooltip on top
+		</span>
+		<p class="tooltip__popup popup-triangle">
+			Tooltip on top
+		</p>
+	</div>
+
+	<div class="tooltip tooltip--popup-bottom">
+		<span class="tooltip__btn">
+			Tooltip on bottom
+		</span>
+		<p class="tooltip__popup popup-triangle">
+			Tooltip on bottom
+		</p>
+	</div>
+
+	<div class="tooltip tooltip--popup-right">
+		<span class="tooltip__btn">
+			Tooltip on right
+		</span>
+		<p class="tooltip__popup popup-triangle">
+			Tooltip on right
+		</p>
+	</div>
+
+	<div class="tooltip tooltip--popup-left">
+		<span class="tooltip__btn">
+			Tooltip on left
+		</span>
+		<p class="tooltip__popup popup-triangle">
+			Tooltip on left
+		</p>
+	</div>
+
+</div>
+					</div>
+
+					<div class="global-box">
+						<h3 class="box-title">
+							Text tooltip
+						</h3>
+						<p class="text-vs-tooltips">
+	Lana Wood says that the Hollywood stars'
+	<span class="text-tooltip text-tooltip--popup-top">
+		<span class="text-tooltip__button">tooltip here</span>
+		<span class="text-tooltip__popup popup-triangle">
+			Tooltip on top
+		</span>
+	</span> Chateau Marmont. Lana Wood
+	says that the
+	Hollywood stars' <span class="text-tooltip text-tooltip--popup-bottom">
+		<span class="text-tooltip__button">tooltip here</span>
+		<span class="text-tooltip__popup popup-triangle">
+			Tooltip on bottom
+		</span>
+	</span> Chateau Marmont.
+</p>
+					</div>
+
+					<div class="global-box">
+						<h3 class="box-title">
+							Tooltip animations
+						</h3>
+						<div style="display: flex;flex-wrap: wrap;gap: 8px;">
+
+	<div class="tooltip-anim tooltip-anim--top">
+		<span class="tooltip-anim__btn">
+			Animation 1
+		</span>
+		<p class="tooltip-anim__popup popup-triangle">
+			From top
+		</p>
+	</div>
+
+	<div class="tooltip-anim tooltip-anim--bottom">
+		<span class="tooltip-anim__btn">
+			Animation 2
+		</span>
+		<p class="tooltip-anim__popup popup-triangle">
+			From bottom
+		</p>
+	</div>
+
+	<div class="tooltip-anim tooltip-anim--fade">
+		<span class="tooltip-anim__btn">
+			Animation 3
+		</span>
+		<p class="tooltip-anim__popup popup-triangle">
+			Fade toggle
+		</p>
+	</div>
+
+	<div class="tooltip-anim tooltip-anim--scale">
+		<span class="tooltip-anim__btn">
+			Animation 4
+		</span>
+		<p class="tooltip-anim__popup popup-triangle">
+			Scale toggle
+		</p>
+	</div>
+
+	<div class="tooltip-anim tooltip-anim--width">
+		<span class="tooltip-anim__btn">
+			Animation 5
+		</span>
+		<p class="tooltip-anim__popup popup-triangle">
+			Width toggle
+		</p>
+	</div>
+
+	<div class="tooltip-anim tooltip-anim--rotate">
+		<span class="tooltip-anim__btn">
+			Animation 6
+		</span>
+		<p class="tooltip-anim__popup popup-triangle">
+			Rotate toggle
+		</p>
+	</div>
+
+</div>
+					</div>
+
+					<div class="global-box">
+						<h3 class="box-title">
+							Tooltips Interactivity
+						</h3>
+						<div style="display: flex;flex-wrap: wrap;gap: 8px;">
+
+	<div class="tooltip tooltip--popup-top is-interactive">
+		<span class="tooltip__btn">
+			Interactive ( Hover )
+		</span>
+		<p class="tooltip__popup popup-triangle">
+			Tooltip on top
+		</p>
+	</div>
+
+	<div class="tooltip tooltip--clickable tooltip--popup-bottom is-interactive">
+		<span class="tooltip__btn">
+			Interactive ( Click )
+		</span>
+		<p class="tooltip__popup popup-triangle">
+			Tooltip on bottom
+		</p>
+	</div>
+
+	<div class="tooltip tooltip--clickable tooltip--popup-top is-interactive">
+		<span class="tooltip__btn">
+			Interactive ( Click )
+		</span>
+		<p class="tooltip__popup popup-triangle">
+			Tooltip on top
+		</p>
+	</div>
+
+	<div class="tooltip tooltip--clickable tooltip--popup-left is-interactive">
+		<span class="tooltip__btn">
+			Interactive ( Click )
+		</span>
+		<p class="tooltip__popup popup-triangle">
+			Tooltip on left
+		</p>
+	</div>
+
+	<div class="tooltip tooltip--clickable tooltip--popup-right is-interactive">
+		<span class="tooltip__btn">
+			Interactive ( Click )
+		</span>
+		<p class="tooltip__popup popup-triangle">
+			Tooltip on right
+		</p>
+	</div>
+
+</div>
+					</div>
+
+					<div class="global-box">
+						<h3 class="box-title">
+							Tooltips Color
+						</h3>
+						<div style="display: flex;flex-wrap: wrap;gap: 8px;">
+
+	<div class="tooltip tooltip--popup-bottom">
+		<span class="tooltip__btn">
+			Tooltip on bottom
+		</span>
+		<p class="tooltip__popup popup-triangle">
+			Tooltip on bottom
+		</p>
+	</div>
+
+	<div class="tooltip tooltip--popup-bottom">
+		<span class="tooltip__btn">
+			Tooltip on bottom
+		</span>
+		<p class="tooltip__popup tooltip__popup--white popup-triangle">
+			Tooltip on bottom
+		</p>
+	</div>
+
+	<div class="tooltip tooltip--popup-bottom">
+		<span class="tooltip__btn">
+			Tooltip on bottom
+		</span>
+		<p class="tooltip__popup tooltip__popup--yellow popup-triangle">
+			Tooltip on bottom
+		</p>
+	</div>
+
+
+
+</div>
+					</div>
+
+					<div class="global-box">
+						<h3 class="box-title">
+							Embed video
+						</h3>
+						<div class="embed-video">
+	<iframe width="100%" height="100%" src="https://www.youtube.com/embed/cpcG5mbSTnQ" title="YouTube video player"
+		frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+		allowfullscreen></iframe>
+</div>
+					</div>
+
+					<div class="global-box">
+						<h3 class="box-title"
+							style="padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid #ccc;">
+							Galleries
+						</h3>
+						<h3 class="box-title" style="margin: 0 0 30px 0;">
+	With controls
+</h3>
+<!-- Gallery controlled -->
+<div class="gallery-controlled">
+	<div class="swiper gallery-controlled__slider">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div class="gallery-controlled__item">
+					<img src="img/posts/1.webp" alt="Gallery photo">
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="gallery-controlled__item">
+					<img src="img/posts/3.webp" alt="Gallery photo">
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="gallery-controlled__item">
+					<img src="img/posts/4.webp" alt="Gallery photo">
+				</div>
+			</div>
+		</div>
+		<div class="swiper-button-next gallery-controlled__next"></div>
+		<div class="swiper-button-prev gallery-controlled__prev"></div>
+		<div class="swiper-pagination gallery-controlled__pagination"></div>
+	</div>
+</div>
+
+
+<h3 class="box-title" style="margin: 30px 0;">
+	With previews
+</h3>
+<!-- Gallery preview -->
+<div class="gallery-controlled gallery-controlled--preview">
+	<div class="swiper gallery-controlled--preview2">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div class="gallery-controlled__item">
+					<img src="img/posts/11.webp" alt="Gallery photo">
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="gallery-controlled__item">
+					<img src="img/posts/3.webp" alt="Gallery photo">
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="gallery-controlled__item">
+					<img src="img/posts/1.webp" alt="Gallery photo">
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="gallery-controlled__item">
+					<img src="img/posts/4.webp" alt="Gallery photo">
+				</div>
+			</div>
+		</div>
+		<div class="swiper-button-next gallery-controlled--preview__next"></div>
+		<div class="swiper-button-prev gallery-controlled--preview__prev"></div>
+	</div>
+	<div thumbsSlider="" class="swiper gallery-controlled--preview1 gallery-controlled--control">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div class="gallery-controlled__item gallery-controlled__item-prev">
+					<img src="img/posts/11.webp" alt="Gallery photo">
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="gallery-controlled__item gallery-controlled__item-prev">
+					<img src="img/posts/3.webp" alt="Gallery photo">
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="gallery-controlled__item gallery-controlled__item-prev">
+					<img src="img/posts/1.webp" alt="Gallery photo">
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="gallery-controlled__item gallery-controlled__item-prev">
+					<img src="img/posts/4.webp" alt="Gallery photo">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+					</div>
+
+					<div class="global-box">
+						<h3 class="box-title"
+							style="padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid #ccc;">
+							Buttons
+						</h3>
+						<div style="display: flex; flex-wrap: wrap; gap: 40px;">
+
+	<div style="display: flex; flex-direction: column; gap: 20px;">
+		<span style="font-weight: 700;">Small size</span>
+		<button class="button button--green button--sm">Button example</button>
+		<button class="button button--blue button--sm">Button example</button>
+	</div>
+
+	<div style="display: flex; flex-direction: column; gap: 20px;">
+		<span style="font-weight: 700;">Middle size</span>
+		<button class="button button--green button--md">Button example</button>
+		<button class="button button--blue button--md">Button example</button>
+	</div>
+
+	<div style="display: flex; flex-direction: column; gap: 20px;">
+		<span style="font-weight: 700;">Large size</span>
+		<button class="button button--green button--lg">Button example</button>
+		<button class="button button--blue button--lg">Button example</button>
+	</div>
+
+	<div style="display: flex; flex-direction: column; gap: 20px;">
+		<span style="font-weight: 700;">With icon</span>
+		<button class="button button--green button--ic">
+			<i class="--ic-post-it-icon"></i>
+			Button example</button>
+		<button class="button button--blue button--ic">
+			<i class="--ic-post-it-icon"></i>
+			Button example</button>
+	</div>
+
+</div>
+					</div>
+
+					<div class="global-box">
+						<h3 class="box-title"
+							style="padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid #ccc;">
+							Progress Bars
+						</h3>
+						<div style="display: flex; flex-direction: column; gap: 20px;">
+
+	<div class="progress-bar__wrap">
+		<div class="progress-bar__top">
+			<span class="progress-bar__name">Design</span>
+			<span class="progress-bar__value">69%</span>
+		</div>
+		<input type="range" class="progress-bar" min="0" max="100" value="69">
+	</div>
+
+	<div class="progress-bar__wrap">
+		<div class="progress-bar__top">
+			<span class="progress-bar__name">Programming</span>
+			<span class="progress-bar__value">72%</span>
+		</div>
+		<input type="range" class="progress-bar" min="0" max="100" value="89">
+	</div>
+
+	<div class="progress-bar__wrap">
+		<div class="progress-bar__top">
+			<span class="progress-bar__name">Creative</span>
+			<span class="progress-bar__value">100%</span>
+		</div>
+		<input type="range" class="progress-bar" min="0" max="100" value="100">
+	</div>
+
+</div>
+					</div>
+
+					<div class="global-box">
+						<h3 class="box-title"
+							style="padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid #ccc;">
+							Tabs
+						</h3>
+						<div style="margin-bottom: 30px;">
+	<h2 style="font-weight: bold;
+font-size: 16px;
+line-height: 24px; margin-bottom: 18px;">
+		Default tabs
+	</h2>
+
+	<div class="tabs">
+		<div class="tabs__buttons">
+			<span class="tabs__button tabs__button--first is-active" id="ai-1">Tab One</span>
+			<span class="tabs__button" id="ai-2">Tab Two</span>
+			<span class="tabs__button" id="ai-3">Tab Three</span>
+		</div>
+		<div class="tabs__items">
+			<div class="tabs__item is-active" data-id="#ai-1">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit malesuada nibh ullamcorper sapien vitae.
+				Purus curabitur
+				ipsum sagittis dolor sit amet, consectetur adipiscing elit.
+			</div>
+			<div class="tabs__item" data-id="#ai-2">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit malesuada nibh ullamcorper sapien vitae.
+				Purus curabitur
+				ipsum sagittis dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur
+				adipiscing elit. Velit malesuada nibh ullamcorper sapien vitae. Purus curabitur
+				ipsum sagittis dolor sit amet, consectetur adipiscing elit.
+			</div>
+			<div class="tabs__item" data-id="#ai-3">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit malesuada nibh ullamcorper sapien vitae.
+				Purus curabitur
+				ipsum sagittis dolor sit amet, consectetur adipiscing elit.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit malesuada nibh ullamcorper sapien vitae.
+				Purus curabitur
+				ipsum sagittis dolor sit amet, consectetur adipiscing elit.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit malesuada nibh ullamcorper sapien vitae.
+				Purus curabitur
+				ipsum sagittis dolor sit amet, consectetur adipiscing elit.
+			</div>
+		</div>
+	</div>
+</div>
+
+<div>
+	<h2 style="font-weight: bold;
+font-size: 16px;
+line-height: 24px; margin-bottom: 18px;">
+		Vertical tabs
+	</h2>
+
+	<div class="tabs tabs--vertical">
+		<div class="tabs__buttons">
+			<span class="tabs__button tabs__button--first is-active" id="ai-4">Tab One</span>
+			<span class="tabs__button" id="ai-5">Tab Two</span>
+			<span class="tabs__button" id="ai-6">Tab Three</span>
+		</div>
+		<div class="tabs__items">
+			<div class="tabs__item is-active" data-id="#ai-4">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit
+				ipsum sagittis dolor sit amet, consectetur adipiscing elit.
+			</div>
+			<div class="tabs__item" data-id="#ai-5">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit
+			</div>
+			<div class="tabs__item" data-id="#ai-6">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit malesuada nibh ullamcorper sapien vitae.
+				Purus curabitur
+				ipsum sagittis dolor sit amet, consectetur adipiscing elit.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit malesuada nibh ullamcorper sapien vitae.
+				Purus curabitur
+				ipsum sagittis dolor sit amet, consectetur adipiscing elit.
+				ipsum sagittis dolor sit amet, consectetur adipiscing elit.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit malesuada nibh ullamcorper sapien vitae.
+				Purus curabitur
+				ipsum sagittis dolor sit amet, consectetur adipiscing elit.
+			</div>
+		</div>
+	</div>
+
+</div>
+					</div>
+
+					<div class="global-box">
+						<h3 class="box-title"
+							style="padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid #ccc;">
+							Accordion
+						</h3>
+						<h2 style="font-weight: bold;
+font-size: 16px;
+line-height: 24px; margin-bottom: 18px;">Default Style</h2>
+
+<div class="accordion">
+
+	<div>
+		<div class="accordion__btn is-active">
+			<span>Consectetur adipiscing elit</span>
+			<div class="accordion__btn-decor"></div>
+		</div>
+		<div class="accordion__item is-shown">
+			<div class="accordion__inner">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit malesuada nibh ullamcorper sapien vitae.
+				Purus curabitur
+				ipsum sagittis dolor sit amet, consectetur adipiscing elit.
+			</div>
+		</div>
+	</div>
+
+	<div>
+		<div class="accordion__btn">
+			<span>Ledger Balance</span>
+			<div class="accordion__btn-decor"></div>
+		</div>
+		<div class="accordion__item">
+			<div class="accordion__inner">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit malesuada nibh ullamcorper sapien vitae.
+				Purus curabitur
+				ipsum sagittis dolor sit amet, consectetur adipiscing elit.
+			</div>
+		</div>
+	</div>
+
+	<div>
+		<div class="accordion__btn">
+			<span>Ledger Balance</span>
+			<div class="accordion__btn-decor"></div>
+		</div>
+		<div class="accordion__item">
+			<div class="accordion__inner">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit malesuada nibh ullamcorper sapien vitae.
+				Purus curabitur
+				ipsum sagittis dolor sit amet, consectetur adipiscing elit.
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<h2 style="font-weight: bold;
+font-size: 16px;
+line-height: 24px; margin-bottom: 18px; margin-top: 30px;">With background</h2>
+
+<div class="accordion accordion--bg">
+
+	<div class="accordion__btn is-active">
+		<span>Consectetur adipiscing elit</span>
+		<div class="accordion__btn-decor"></div>
+	</div>
+	<div class="accordion__item is-shown">
+		<div class="accordion__inner">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit malesuada nibh ullamcorper sapien vitae.
+			Purus curabitur
+			ipsum sagittis dolor sit amet, consectetur adipiscing elit.
+		</div>
+	</div>
+
+	<div class="accordion__btn">
+		<span>Ledger Balance</span>
+		<div class="accordion__btn-decor"></div>
+	</div>
+	<div class="accordion__item">
+		<div class="accordion__inner">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit malesuada nibh ullamcorper sapien vitae.
+			Purus curabitur
+			ipsum sagittis dolor sit amet, consectetur adipiscing elit.
+		</div>
+	</div>
+
+	<div class="accordion__btn">
+		<span>Ledger Balance</span>
+		<div class="accordion__btn-decor"></div>
+	</div>
+	<div class="accordion__item">
+		<div class="accordion__inner">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit malesuada nibh ullamcorper sapien vitae.
+			Purus curabitur
+			ipsum sagittis dolor sit amet, consectetur adipiscing elit.
+		</div>
+	</div>
+
+</div>
+					</div>
+
+					<div class="global-box">
+						<h3 class="box-title"
+							style="padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid #ccc;">
+							Offcanvas
+						</h3>
+						<span class="offcanvas__button">
+	Button Example
+</span>
+
+<div class="offcanvas">
+	<div class="offcanvas__close">
+		<span></span>
+	</div>
+	<div class="offcanvas__menu-inner">
+		<p style="margin-bottom: 30px;">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consequuntur magnam corporis ratione
+			ducimus culpa iusto aperiam tenetur totam maiores, placeat laborum itaque ea, qui doloribus voluptatum
+			voluptatibus unde? In.
+		</p>
+		<ul>
+			<li>
+				<a href="#">Example 1</a>
+			</li>
+			<li>
+				<a href="#">Example 2</a>
+			</li>
+			<li>
+				<a href="#">Example 3</a>
+			</li>
+			<li>
+				<a href="#">Example 4</a>
+			</li>
+			<li>
+				<a href="#">Example 5</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="offcanvas__overlay"></div>
+					</div>
+
+					<div class="global-box">
+						<h3 class="box-title"
+							style="padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid #ccc;">
+							Switchers
+						</h3>
+						<div style="display: flex; gap: 20px;flex-wrap: wrap;justify-content: space-between;">
+
+	<div style="display: flex; flex-direction: column; gap: 30px;">
+		<span>Small size</span>
+
+		<label class="switch-input switch-input--sm">
+			<input class="switch-input__checkbox" type="checkbox" checked>
+			<span class="switch-input__slider"></span>
+		</label>
+
+		<label class="switch-input switch-input--sm">
+			<input class="switch-input__checkbox" type="checkbox">
+			<span class="switch-input__slider"></span>
+		</label>
+
+	</div>
+
+	<div style="display: flex; flex-direction: column; gap: 30px;">
+		<span>Medium size</span>
+
+		<label class="switch-input switch-input--md">
+			<input class="switch-input__checkbox" type="checkbox" checked>
+			<span class="switch-input__slider"></span>
+		</label>
+
+		<label class="switch-input switch-input--md">
+			<input class="switch-input__checkbox" type="checkbox">
+			<span class="switch-input__slider"></span>
+		</label>
+
+	</div>
+
+	<div style="display: flex; flex-direction: column; gap: 30px;">
+		<span>Large size</span>
+
+		<label class="switch-input switch-input--lg">
+			<input class="switch-input__checkbox" type="checkbox" checked>
+			<span class="switch-input__slider"></span>
+		</label>
+
+		<label class="switch-input switch-input--lg">
+			<input class="switch-input__checkbox" type="checkbox">
+			<span class="switch-input__slider"></span>
+		</label>
+
+	</div>
+
+	<div style="display: flex; flex-direction: column; gap: 30px;">
+		<span>With icon</span>
+
+		<label class="switch-input switch-input--ic">
+			<input class="switch-input__checkbox" type="checkbox" checked>
+			<span class="switch-input__slider"></span>
+		</label>
+
+		<label class="switch-input switch-input--ic">
+			<input class="switch-input__checkbox" type="checkbox">
+			<span class="switch-input__slider"></span>
+		</label>
+
+	</div>
+
+</div>
+					</div>
+
+
+				</div><!-- Wrapper block -->
+
+				<!-- Wrapper block -->
+				<div class="df-column">
+
+					<div class="global-box">
+						<h3 class="box-title">
+							Default Pagination
+						</h3>
+						<div style="display: flex; gap: 55px; flex-wrap: wrap;">
+
+	<ul class="pagination">
+		<li class="pagination__item">
+			<a class="pagination__link" href="#">1</a>
+		</li>
+		<li class="pagination__item">
+			<a class="pagination__link" href="#">2</a>
+		</li>
+		<li class="pagination__item">
+			<a class="pagination__link" href="#">3</a>
+		</li>
+		<li class="pagination__item">
+			<a class="pagination__link" href="#">4</a>
+		</li>
+		<li class="pagination__item">
+			<a class="pagination__link" href="#">
+				<i class="--ic-pagination-angle-right"></i>
+			</a>
+		</li>
+	</ul>
+
+	<ul class="pagination pagination--bordered">
+		<li class="pagination__item">
+			<a class="pagination__link" href="#">1</a>
+		</li>
+		<li class="pagination__item">
+			<a class="pagination__link" href="#">2</a>
+		</li>
+		<li class="pagination__item">
+			<a class="pagination__link" href="#">3</a>
+		</li>
+		<li class="pagination__item">
+			<a class="pagination__link" href="#">4</a>
+		</li>
+		<li class="pagination__item">
+			<a class="pagination__link" href="#">
+				<i class="--ic-pagination-angle-right"></i>
+			</a>
+		</li>
+	</ul>
+
+
+</div>
+					</div>
+
+					<div class="global-box">
+						<h3 class="box-title">
+							Breadcrumbs Style
+						</h3>
+						<ul class="breadcrumbs">
+	<li class="breadcrumbs__item">
+		<a class="breadcrumbs__link" href="#">Home</a>
+	</li>
+	<li class="breadcrumbs__item">
+		<a class="breadcrumbs__link" href="#">Category</a>
+	</li>
+	<li class="breadcrumbs__item">
+		<a class="breadcrumbs__link" href="#">Item</a>
+	</li>
+</ul>
+					</div>
+
+					<div class="global-box">
+						<h3 class="box-title">
+							Breadcrumbs Style
+						</h3>
+						<div style="display: flex;flex-direction: column;
+gap: 20px;">
+
+	<div>
+		<h1 class="heading heading--1">
+			Heading 1
+		</h1>
+		<p class="subheading">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit malesuada nibh ullamcorper sapien vitae.
+			Purus
+			curabitur
+			ipsum sagittis
+		</p>
+	</div>
+
+	<div>
+		<h2 class="heading heading--2">
+			Heading 2
+		</h2>
+		<p class="subheading">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit malesuada nibh ullamcorper sapien vitae.
+			Purus
+			curabitur
+			ipsum sagittis
+		</p>
+	</div>
+
+	<div>
+		<h3 class="heading heading--3">
+			Heading 3
+		</h3>
+		<p class="subheading">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit malesuada nibh ullamcorper sapien vitae.
+			Purus
+			curabitur
+			ipsum sagittis
+		</p>
+	</div>
+
+	<div>
+		<h4 class="heading heading--4">
+			Heading 4
+		</h4>
+		<p class="subheading">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit malesuada nibh ullamcorper sapien vitae.
+			Purus
+			curabitur
+			ipsum sagittis
+		</p>
+	</div>
+
+	<div>
+		<h5 class="heading heading--5">
+			Heading 5
+		</h5>
+		<p class="subheading">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit malesuada nibh ullamcorper sapien vitae.
+			Purus
+			curabitur
+			ipsum sagittis
+		</p>
+	</div>
+
+</div>
+					</div>
+
+					<div class="global-box">
+						<h3 class="box-title">
+							Blockquote
+						</h3>
+						<p style="font-size: 16px;
+line-height: 24px;
+color: #585C73; margin-bottom: 18px;">
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit malesuada nibh ullamcorper sapien vitae. Purus
+	curabitur
+	ipsum sagittis dolor sit amet, consectetur adipiscing elit.
+</p>
+
+<div class="blockquote__wrap">
+	<blockquote class="blockquote">
+		Dolor sit amet, consectetur adipiscing elit. Velit malesuada nibh ullamcorper sapien vitae. Purus curabitur
+		ipsum
+		sagittis dolor sit amet, consectetur adipiscing elit.
+	</blockquote>
+</div>
+
+<p style="font-size: 16px;
+line-height: 24px;
+color: #585C73; margin: 18px 0;">
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit malesuada nibh ullamcorper sapien vitae. Purus
+	curabitur
+	ipsum sagittis dolor sit amet, consectetur adipiscing elit.
+</p>
+
+<div class="blockquote__wrap blockquote__wrap--bg">
+	<blockquote class="blockquote">
+		Dolor sit amet, consectetur adipiscing elit. Velit malesuada nibh ullamcorper sapien vitae. Purus curabitur
+		ipsum
+		sagittis dolor sit amet, consectetur adipiscing elit.
+	</blockquote>
+</div>
+					</div>
+
+					<div class="global-box">
+						<h3 class="box-title"
+							style="padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid #ccc;">
+							Listings
+						</h3>
+						<div style="display: flex;gap: clamp(20px, 10vw, 150px);flex-wrap: wrap;">
+
+	<div>
+		<h2 style="font-weight: bold;
+		font-size: 16px;
+		line-height: 24px; margin-bottom: 18px;">Unordered List</h2>
+
+		<ul class="list list--dotted">
+			<li class="list__item">
+				<a class="list__link" href="#">
+					Lorem ipsum dolor sit amet
+				</a>
+			</li>
+			<li class="list__item">
+				<a class="list__link" href="#">
+					Consectetur adipiscing elit
+				</a>
+			</li>
+			<li class="list__item">
+				<a class="list__link" href="#">
+					Integer molestie lorem at massa
+				</a>
+			</li>
+			<li class="list__item">
+				<a class="list__link" href="#">
+					Facilisis in pretium nisl aliquet
+				</a>
+			</li>
+			<li class="list__item">
+				<a class="list__link" href="#">
+					Nulla volutpat aliquam velit
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<div>
+		<h2 style="font-weight: bold;
+					font-size: 16px;
+					line-height: 24px; margin-bottom: 18px;">Ordered List</h2>
+
+		<ol class="list list--num">
+			<li class="list__item">
+				<a class="list__link" href="#">
+					Lorem ipsum dolor sit amet
+				</a>
+			</li>
+			<li class="list__item">
+				<a class="list__link" href="#">
+					Consectetur adipiscing elit
+				</a>
+			</li>
+			<li class="list__item">
+				<a class="list__link" href="#">
+					Integer molestie lorem at massa
+				</a>
+			</li>
+			<li class="list__item">
+				<a class="list__link" href="#">
+					Facilisis in pretium nisl aliquet
+				</a>
+			</li>
+			<li class="list__item">
+				<a class="list__link" href="#">
+					Nulla volutpat aliquam velit
+				</a>
+			</li>
+		</ol>
+	</div>
+
+
+</div>
+					</div>
+
+					<div class="global-box">
+						<h3 class="box-title"
+							style="padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid #ccc;">
+							List Group
+						</h3>
+						<div style="display: grid;grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 28px; margin-bottom: 30px;">
+
+	<div>
+		<h2 style="font-weight: bold;
+				font-size: 16px;
+				line-height: 24px; margin-bottom: 18px;">Basic Example</h2>
+
+		<!-- list-group -->
+		<ul class="list-group">
+			<li class="list-group__item">
+				<a class="list-group__link" href="#">
+					<i class="--ic-sidebar-crm"></i>
+					<span>
+						Lorem ipsum dolor sit amet
+					</span>
+				</a>
+			</li>
+			<li class="list-group__item">
+				<a class="list-group__link" href="#">
+					<i class="--ic-sidebar-projects"></i>
+					<span>
+						Explain to you how all this mistaken
+					</span>
+				</a>
+			</li>
+			<li class="list-group__item">
+				<a class="list-group__link" href="#">
+					<i class="--ic-sidebar-forms"></i>
+					<span>
+						Praising pain was born
+					</span>
+				</a>
+			</li>
+			<li class="list-group__item">
+				<a class="list-group__link" href="#">
+					<i class="--ic-sidebar-tables"></i>
+					<span>
+						System, and expound the actual
+					</span>
+				</a>
+			</li>
+		</ul><!-- list-group -->
+
+	</div>
+
+	<div>
+		<h2 style="font-weight: bold;
+					font-size: 16px;
+					line-height: 24px; margin-bottom: 18px;">Active items</h2>
+
+		<!-- list-group -->
+		<ul class="list-group">
+			<li class="list-group__item is-active">
+				<a class="list-group__link" href="#">
+					<i class="--ic-sidebar-crm"></i>
+					<span>
+						Lorem ipsum dolor sit amet
+					</span>
+				</a>
+			</li>
+			<li class="list-group__item">
+				<a class="list-group__link" href="#">
+					<i class="--ic-sidebar-projects"></i>
+					<span>
+						Explain to you how all this mistaken
+					</span>
+				</a>
+			</li>
+			<li class="list-group__item">
+				<a class="list-group__link" href="#">
+					<i class="--ic-sidebar-forms"></i>
+					<span>
+						Praising pain was born
+					</span>
+				</a>
+			</li>
+			<li class="list-group__item">
+				<a class="list-group__link" href="#">
+					<i class="--ic-sidebar-tables"></i>
+					<span>
+						System, and expound the actual
+					</span>
+				</a>
+			</li>
+		</ul><!-- list-group -->
+
+	</div>
+
+</div>
+
+<div style="display: grid;grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 28px;">
+
+	<div>
+		<h2 style="font-weight: bold;
+				font-size: 16px;
+				line-height: 24px; margin-bottom: 18px;">With badges</h2>
+
+		<!-- list-group -->
+		<ul class="list-group list-group--badges">
+			<li class="list-group__item">
+				<a class="list-group__link" href="#">
+					<span>Lorem ipsum dolor sit amet</span>
+					<span class="list-group__badge">
+						3
+					</span>
+				</a>
+			</li>
+			<li class="list-group__item">
+				<a class="list-group__link" href="#">
+					<span>Explain to you how all this mistaken</span>
+					<span class="list-group__badge list-group__badge--red">
+						8
+					</span>
+				</a>
+			</li>
+			<li class="list-group__item">
+				<a class="list-group__link" href="#">
+					<span>Praising pain was born</span>
+					<span class="list-group__badge">
+						2
+					</span>
+				</a>
+			</li>
+			<li class="list-group__item">
+				<a class="list-group__link" href="#">
+					<span>System, and expound the actual</span>
+					<span class="list-group__badge list-group__badge--dark">
+						1
+					</span>
+				</a>
+			</li>
+		</ul><!-- list-group -->
+
+	</div>
+
+	<div>
+		<h2 style="font-weight: bold;
+					font-size: 16px;
+					line-height: 24px; margin-bottom: 18px;">Checkboxes</h2>
+
+		<!-- list-group -->
+		<ul class="list-group list-group--checkboxes">
+			<li class="list-group__item">
+				<span class="list-group__link">
+					<label class="check-input">
+						<input class="check-input__check" type="checkbox" checked>
+						<span class="check-input__style"></span>
+						<span>Lorem ipsum dolor sit amet</span>
+					</label>
+				</span>
+			</li>
+			<li class="list-group__item">
+				<span class="list-group__link">
+					<label class="check-input">
+						<input class="check-input__check" type="checkbox">
+						<span class="check-input__style"></span>
+						<span>Explain to you how all this mistaken</span>
+					</label>
+				</span>
+			</li>
+			<li class="list-group__item">
+				<span class="list-group__link">
+					<label class="check-input">
+						<input class="check-input__check" type="checkbox">
+						<span class="check-input__style"></span>
+						<span>Praising pain was born</span>
+					</label>
+				</span>
+			</li>
+			<li class="list-group__item">
+				<span class="list-group__link">
+					<label class="check-input">
+						<input class="check-input__check" type="checkbox">
+						<span class="check-input__style"></span>
+						<span>System, and expound the actual</span>
+					</label>
+				</span>
+			</li>
+		</ul><!-- list-group -->
+
+	</div>
+
+</div>
+					</div>
+
+					<div class="global-box">
+						<h3 class="box-title"
+							style="padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid #ccc;">
+							Avatars
+						</h3>
+						<div style="display: flex;flex-wrap: wrap;gap: 50px;">
+
+	<div>
+		<h2 style="font-weight: bold;
+				font-size: 16px;
+				line-height: 24px; margin-bottom: 18px;">Small Size</h2>
+
+		<div class="avatar avatar--sm">
+			<img src="img/users/8.webp" alt="User avatar">
+		</div>
+	</div>
+
+	<div>
+		<h2 style="font-weight: bold;
+				font-size: 16px;
+				line-height: 24px; margin-bottom: 18px;">Middle Size</h2>
+
+		<div class="avatar avatar--md">
+			<img src="img/users/8.webp" alt="User avatar">
+		</div>
+	</div>
+
+	<div>
+		<h2 style="font-weight: bold;
+				font-size: 16px;
+				line-height: 24px; margin-bottom: 18px;">Large Size</h2>
+
+		<div class="avatar avatar--lg">
+			<img src="img/users/8.webp" alt="User avatar">
+		</div>
+	</div>
+
+	<div>
+		<h2 style="font-weight: bold;
+				font-size: 16px;
+				line-height: 24px; margin-bottom: 18px;">Extra Large Size</h2>
+
+		<div class="avatar avatar--xl">
+			<img src="img/users/8.webp" alt="User avatar">
+		</div>
+	</div>
+
+</div>
+					</div>
+
+					<div class="global-box">
+						<h3 class="box-title"
+							style="padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid #ccc;">
+							Notifications
+						</h3>
+						<div style="display: flex; gap: 30px;flex-wrap: wrap;margin-bottom: 30px;">
+
+	<div>
+		<h2 style="font-weight: bold;
+				font-size: 16px;
+				line-height: 24px; margin-bottom: 18px;">Standard</h2>
+
+		<!-- notification -->
+		<div class="notification">
+			<div class="notification__inner">
+				<div class="notification__top">
+					<div class="notification__user">
+						<div class="avatar avatar--sm">
+							<img src="img/users/8.webp" alt="User avatar">
+						</div>
+						<div class="notification__user-name">
+							Anna Smith
+						</div>
+					</div>
+					<div class="notification__time">
+						<span>
+							11 min ago
+						</span>
+						<i class="notification__close --ic-popup-close"></i>
+					</div>
+				</div>
+				<div class="notification__message">
+					<p>
+						Hello, world! This is a test message.
+					</p>
+				</div>
+			</div>
+		</div><!-- notification -->
+
+	</div>
+
+	<div>
+		<h2 style="font-weight: bold;
+						font-size: 16px;
+						line-height: 24px; margin-bottom: 18px;">With Stroke</h2>
+
+		<!-- notification -->
+		<div class="notification notification--bordered">
+			<div class="notification__inner">
+				<div class="notification__top">
+					<div class="notification__user">
+						<div class="avatar avatar--sm">
+							<img src="img/users/8.webp" alt="User avatar">
+						</div>
+						<div class="notification__user-name">
+							Anna Smith
+						</div>
+					</div>
+					<div class="notification__time">
+						<span>
+							11 min ago
+						</span>
+						<i class="notification__close --ic-popup-close"></i>
+					</div>
+				</div>
+				<div class="notification__message">
+					<p>
+						Hello, world! This is a test message.
+					</p>
+				</div>
+			</div>
+		</div><!-- notification -->
+
+	</div>
+
+</div>
+
+<div style="display: flex; gap: 30px;flex-wrap: wrap;">
+
+	<div style="display: flex;flex-direction: column;">
+		<h2 style="font-weight: bold;
+				font-size: 16px;
+				line-height: 24px; margin-bottom: 18px;">Small Info Message</h2>
+
+		<!-- notification -->
+		<div class="notification notification--small">
+			<div class="notification__inner">
+				<div class="notification__message">
+					<p>
+						Hello, world! This is a test message.
+					</p>
+					<i class="notification__close --ic-popup-close"></i>
+				</div>
+			</div>
+		</div><!-- notification -->
+
+		<div style="margin-top: 15px;"></div>
+
+		<!-- notification -->
+		<div class="notification notification--small green-bg">
+			<div class="notification__inner">
+				<div class="notification__message">
+					<p>
+						Hello, world! This is a test message.
+					</p>
+					<i class="notification__close --ic-popup-close"></i>
+				</div>
+			</div>
+		</div><!-- notification -->
+
+	</div>
+
+	<div>
+		<h2 style="font-weight: bold;
+						font-size: 16px;
+						line-height: 24px; margin-bottom: 18px;">With Button</h2>
+
+		<!-- notification -->
+		<div class="notification">
+			<div class="notification__inner">
+				<div class="notification__top">
+					<div class="notification__user">
+						<div class="avatar avatar--sm">
+							<img src="img/users/8.webp" alt="User avatar">
+						</div>
+						<div class="notification__user-name">
+							Anna Smith
+						</div>
+					</div>
+					<div class="notification__time">
+						<span>
+							11 min ago
+						</span>
+						<i class="notification__close --ic-popup-close"></i>
+					</div>
+				</div>
+				<div class="notification__message">
+					<p>
+						Hello, world! This is a test message.
+					</p>
+				</div>
+				<button class="notification__button button button--green button--sm">Take Action</button>
+			</div>
+		</div><!-- notification -->
+
+	</div>
+
+</div>
+					</div>
+
+					<div class="global-box">
+						<h3 class="box-title"
+							style="padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid #ccc;">
+							Alerts
+						</h3>
+						<h2 style="font-weight: bold;
+				font-size: 16px;
+				line-height: 24px; margin-bottom: 18px;">Small Info Message</h2>
+
+<div class="alert alert--success">
+	<i class="--ic-alert-check alert__icon"></i>
+	<p class="alert__message">
+		This is a success alert—check it out!
+	</p>
+	<i class="alert__close --ic-popup-close"></i>
+</div>
+<div style="margin-bottom: 10px;"></div>
+
+<div class="alert alert--danger">
+	<i class="--ic-alert-danger alert__icon"></i>
+	<p class="alert__message">
+		This is a danger alert—check it out!
+	</p>
+	<i class="alert__close --ic-popup-close"></i>
+</div>
+<div style="margin-bottom: 10px;"></div>
+
+<div class="alert alert--warning">
+	<i class="--ic-alert-warning alert__icon"></i>
+	<p class="alert__message">
+		This is a warning alert—check it out!
+	</p>
+	<i class="alert__close --ic-popup-close"></i>
+</div>
+<div style="margin-bottom: 10px;"></div>
+
+<div class="alert alert--info">
+	<i class="--ic-alert-info alert__icon"></i>
+	<p class="alert__message">
+		A simple info alert with an example link. Give it a click if you like.
+	</p>
+	<i class="alert__close --ic-popup-close"></i>
+</div>
+<div style="margin-bottom: 10px;"></div>
+
+<div class="alert alert--primary">
+	<i class="--ic-alert-primary alert__icon"></i>
+	<p class="alert__message">
+		This is a primary alert—check it out!
+	</p>
+	<i class="alert__close --ic-popup-close"></i>
+</div>
+					</div>
+
+					<div class="global-box">
+						<h3 class="box-title"
+							style="padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid #ccc;">
+							Modals
+						</h3>
+						<div style="display: flex;flex-wrap: wrap;gap: 10px;">
+
+	<div>
+		<button class="button__modal button button--green button--md" id="modal-1">Standard Modal</button>
+
+		<div class="modal__wrap" data-id="#modal-1">
+			<div class="modal modal--standard">
+				<div class="modal__inner">
+					<i class="modal__close --ic-popup-close"></i>
+					<div class="modal__top">
+						<h2 class="heading heading--2">
+							Standard Modal
+						</h2>
+						<p class="subheading">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Veli maluada nibh ullamcorper
+							sapien
+							vitae.
+						</p>
+					</div>
+					<div class="modal__content custom-scroll">
+						<h2 class="heading heading--2">
+							Headings
+						</h2>
+						<div class="modal__content-text">
+							<p>
+								Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis
+								lacus
+								vel
+								augue laoreet rutrum
+								faucibus dolor auctor.
+							</p>
+							<p>
+								Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
+								scelerisque
+								nisl consectetur et. Donec
+								sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+							</p>
+						</div>
+					</div>
+					<div class="modal__buttons">
+						<button class="modal__button modal__button-cancel button button--green button--md">
+							Cancel
+						</button>
+						<button class="modal__button modal__button-save button button--green button--md">
+							Save Changes
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div>
+		<button class="button__modal button button--light-blue button--md" id="modal-2">Large Modal</button>
+
+		<div class="modal__wrap" data-id="#modal-2">
+			<div class="modal custom-scroll modal--large">
+				<div class="modal__inner">
+					<i class="modal__close --ic-popup-close"></i>
+					<div class="modal__top">
+						<h2 class="heading heading--2">
+							Large Modal
+						</h2>
+						<p class="subheading">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Veli maluada nibh ullamcorper
+							sapien
+							vitae.
+						</p>
+					</div>
+					<div class="modal__content custom-scroll">
+						<h2 class="heading heading--2">
+							Headings
+						</h2>
+						<div class="modal__content-text">
+							<p>
+								Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis
+								lacus
+								vel
+								augue laoreet rutrum
+								faucibus dolor auctor.
+							</p>
+							<p>
+								Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
+								scelerisque
+								nisl consectetur et. Donec
+								sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+							</p>
+						</div>
+					</div>
+					<div class="modal__buttons">
+						<button class="modal__button modal__button-cancel button button--green button--md">
+							Cancel
+						</button>
+						<button class="modal__button modal__button-save button button--green button--md">
+							Save Changes
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div>
+		<button class="button__modal button button--orange button--md" id="modal-3">Small Modal</button>
+
+		<div class="modal__wrap" data-id="#modal-3">
+			<div class="modal custom-scroll modal--small">
+				<div class="modal__inner">
+					<i class="modal__close --ic-popup-close"></i>
+					<div class="modal__top">
+						<h2 class="heading heading--2">
+							Small Modal
+						</h2>
+						<p class="subheading">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Veli maluada nibh ullamcorper
+							sapien
+							vitae.
+						</p>
+					</div>
+					<div class="modal__content custom-scroll">
+						<h2 class="heading heading--2">
+							Headings
+						</h2>
+						<div class="modal__content-text">
+							<p>
+								Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis
+								lacus
+								vel
+								augue laoreet rutrum
+								faucibus dolor auctor.
+							</p>
+							<p>
+								Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
+								scelerisque
+								nisl consectetur et. Donec
+								sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+							</p>
+						</div>
+					</div>
+					<div class="modal__buttons">
+						<button class="modal__button modal__button-cancel button button--green button--md">
+							Cancel
+						</button>
+						<button class="modal__button modal__button-save button button--green button--md">
+							Save Changes
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div>
+		<button class="button__modal button button--purple button--md" id="modal-4">Full width</button>
+
+		<div class="modal__wrap" data-id="#modal-4">
+			<div class="modal custom-scroll modal--full">
+				<div class="modal__inner">
+					<i class="modal__close --ic-popup-close"></i>
+					<div class="modal__top">
+						<h2 class="heading heading--2">
+							Large Modal
+						</h2>
+						<p class="subheading">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Veli maluada nibh ullamcorper
+							sapien
+							vitae.
+						</p>
+					</div>
+					<div class="modal__content custom-scroll">
+						<h2 class="heading heading--2">
+							Headings
+						</h2>
+						<div class="modal__content-text">
+							<p>
+								Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis
+								lacus
+								vel
+								augue laoreet rutrum
+								faucibus dolor auctor.
+							</p>
+							<p>
+								Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
+								scelerisque
+								nisl consectetur et. Donec
+								sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+							</p>
+						</div>
+					</div>
+					<div class="modal__buttons">
+						<button class="modal__button modal__button-cancel button button--green button--md">
+							Cancel
+						</button>
+						<button class="modal__button modal__button-save button button--green button--md">
+							Save Changes
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div>
+		<button class="button__modal button button--blue button--md" id="modal-5">Scrolable Modal</button>
+
+		<div class="modal__wrap" data-id="#modal-5">
+			<div class="modal custom-scroll modal--scrolable">
+				<div class="modal__inner">
+					<i class="modal__close --ic-popup-close"></i>
+					<div class="modal__top">
+						<h2 class="heading heading--2">
+							Scrolable Modal
+						</h2>
+						<p class="subheading">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Veli maluada nibh ullamcorper
+							sapien
+							vitae.
+						</p>
+					</div>
+					<div class="modal__content custom-scroll">
+						<h2 class="heading heading--2">
+							Headings
+						</h2>
+						<div class="modal__content-text">
+							<p>
+								Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis
+								lacus
+								vel
+								augue laoreet rutrum
+								faucibus dolor auctor.
+							</p>
+							<p>
+								Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
+								scelerisque
+								nisl consectetur et. Donec
+								sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+							</p>
+							<p>
+								Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
+								scelerisque
+								nisl consectetur et. Donec
+								sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem doloribus quam suscipit
+								sapiente! Consequuntur iusto nam ducimus, similique veniam quos dolor aut perspiciatis
+								eius ipsa repellat ex non. Nulla ratione repellat quae placeat assumenda fuga omnis
+								eveniet autem doloremque voluptates inventore, at aperiam hic recusandae consectetur
+								modi aliquid provident. Mollitia voluptatem velit commodi atque voluptatum error impedit
+								quasi veritatis dolorum distinctio sit corrupti eveniet modi, repellat natus molestiae
+								hic ut excepturi autem rerum dolorem odio magnam! Rem ratione nihil vel? Eveniet ullam,
+								provident numquam dolores quisquam laboriosam repellat ea ducimus natus. Assumenda omnis
+								dignissimos temporibus alias architecto repellendus optio quod sint voluptatibus
+								exercitationem repellat eaque dolore facere perspiciatis eligendi, culpa eos nobis animi
+								aperiam accusantium odio. Repellendus officiis deleniti maxime accusantium aspernatur,
+								nihil reprehenderit sint autem dolor consectetur vero dolore ea expedita ad laboriosam
+								eius aut perferendis porro debitis. Illum, numquam laborum non nam molestiae soluta
+								doloremque modi eos ducimus.
+							</p>
+							<p>
+								Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
+								scelerisque
+								nisl consectetur et. Donec
+								sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+							</p>
+						</div>
+					</div>
+					<div class="modal__buttons">
+						<button class="modal__button modal__button-cancel button button--green button--md">
+							Cancel
+						</button>
+						<button class="modal__button modal__button-save button button--green button--md">
+							Save Changes
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<!-- * Modal overlay * -->
+<div class="modal__overlay"></div>
+<!-- * Modal overlay * -->
+					</div>
+
+					<div class="global-box">
+						<h3 class="box-title"
+							style="padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid #ccc;">
+							Portlets
+						</h3>
+						<div style="display: flex;flex-wrap: wrap;gap: 30px;">
+
+	<div class="portlet">
+		<div class="portlet__top">
+			<h5 class="heading heading--5">
+				Card title
+			</h5>
+			<div class="portlet__actions">
+				<i class="--ic-refresh-icon"></i>
+				<span class="portlet__actions-min"></span>
+				<i class="portlet__close --ic-popup-close"></i>
+			</div>
+		</div>
+		<div class="portlet__content">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit malesuada nibh ullamcorper sapien vitae.
+				Purus curabitur
+				ipsum sagittis dolor sit ame.
+			</p>
+		</div>
+	</div>
+
+	<div class="portlet portlet--blue">
+		<div class="portlet__top">
+			<h5 class="heading heading--5">
+				Card title
+			</h5>
+			<div class="portlet__actions">
+				<i class="--ic-refresh-icon"></i>
+				<span class="portlet__actions-min"></span>
+				<i class="portlet__close --ic-popup-close"></i>
+			</div>
+		</div>
+		<div class="portlet__content">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit malesuada nibh ullamcorper sapien vitae.
+				Purus curabitur
+				ipsum sagittis dolor sit ame.
+			</p>
+		</div>
+	</div>
+
+	<div class="portlet portlet--green">
+		<div class="portlet__top">
+			<h5 class="heading heading--5">
+				Card title
+			</h5>
+			<div class="portlet__actions">
+				<i class="--ic-refresh-icon"></i>
+				<span class="portlet__actions-min"></span>
+				<i class="portlet__close --ic-popup-close"></i>
+			</div>
+		</div>
+		<div class="portlet__content">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit malesuada nibh ullamcorper sapien vitae.
+				Purus curabitur
+				ipsum sagittis dolor sit ame.
+			</p>
+		</div>
+	</div>
+
+	<div class="portlet portlet--red">
+		<div class="portlet__top">
+			<h5 class="heading heading--5">
+				Card title
+			</h5>
+			<div class="portlet__actions">
+				<i class="--ic-refresh-icon"></i>
+				<span class="portlet__actions-min"></span>
+				<i class="portlet__close --ic-popup-close"></i>
+			</div>
+		</div>
+		<div class="portlet__content">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit malesuada nibh ullamcorper sapien vitae.
+				Purus curabitur
+				ipsum sagittis dolor sit ame.
+			</p>
+		</div>
+	</div>
+
+</div>
+					</div>
+
+					<div class="global-box">
+						<h3 class="box-title"
+							style="padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid #ccc;">
+							Ribbons
+						</h3>
+						<div style="display: flex;flex-wrap: wrap;gap: 30px;">
+
+	<div class="ribbon-card">
+		<div class="ribbon-card__ribbon ribbon-card__ribbon--green horizontal">
+			<span>Card title</span>
+		</div>
+		<p class="ribbon-card__content">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit malesuada nibh ullamcorper sapien vitae.
+			Purus curabitur
+			ipsum sagittis dolor sit ame.
+		</p>
+	</div>
+
+	<div class="ribbon-card">
+		<div class="ribbon-card__ribbon ribbon-card__ribbon--gray horizontal">
+			<span>Card title</span>
+		</div>
+		<p class="ribbon-card__content">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit malesuada nibh ullamcorper sapien vitae.
+			Purus curabitur
+			ipsum sagittis dolor sit ame.
+		</p>
+	</div>
+
+	<div class="ribbon-card ribbon-card--overflow">
+		<div class="ribbon-card__ribbon ribbon-card__ribbon--light-gray vertical">
+			<span>Card title</span>
+		</div>
+		<p class="ribbon-card__content">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit malesuada nibh ullamcorper sapien vitae.
+			Purus curabitur
+			ipsum sagittis dolor sit ame.
+		</p>
+	</div>
+
+	<div class="ribbon-card ribbon-card--overflow">
+		<div class="ribbon-card__ribbon ribbon-card__ribbon--red vertical">
+			<span>Card title</span>
+		</div>
+		<p class="ribbon-card__content">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit malesuada nibh ullamcorper sapien vitae.
+			Purus curabitur
+			ipsum sagittis dolor sit ame.
+		</p>
+	</div>
+
+</div>
+					</div>
+
+				</div><!-- Wrapper block -->
+
+			</div><!-- columns__wrap-container two-columns -->
+		</div><!-- .columns__wrap -->
+	</div><!-- .main-container -->
+
+	</div>
+
+	<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/fancy.js"></script>
+<script src="js/kalendae.standalone.js"></script>
+<script src="js/plyr.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/timepicker.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

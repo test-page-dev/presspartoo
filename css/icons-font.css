@@ -26,262 +26,298 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.--ic-not-visible:before {
-  content: "\e93f";
+.--ic-alert-danger:before {
+  content: "\e944";
 }
 
-.--ic-visible:before {
-  content: "\e940";
+.--ic-alert-info:before {
+  content: "\e945";
 }
 
-.--ic-settings-page-icon:before {
-  content: "\e93d";
+.--ic-alert-primary:before {
+  content: "\e946";
 }
 
-.--ic-password-eye:before {
-  content: "\e93e";
+.--ic-alert-warning:before {
+  content: "\e947";
 }
 
-.--ic-twitter-monocolor-icon:before {
-  content: "\e939";
+.--ic-alert-check:before {
+  content: "\e948";
 }
 
-.--ic-instagram-monocolor-icon:before {
-  content: "\e93a";
+.--ic-refresh-icon:before {
+  content: "\e949";
 }
 
-.--ic-google-monocolor-icon:before {
-  content: "\e93b";
+.--ic-popup-close:before {
+  content: "\e942";
 }
 
-.--ic-facebook-monocolor-icon:before {
-  content: "\e93c";
+.--ic-suitcase-icon-converted:before {
+  content: "\e943";
 }
 
-.--ic-settings-icon-black:before {
-  content: "\e938";
-}
-
-.--ic-notifications-icon:before {
+.--ic-pagination-angle-right:before {
   content: "\e900";
 }
 
-.--ic-fullscreen-icon:before {
+.--ic-notifications-icon:before {
   content: "\e901";
 }
 
-.--ic-angle-down-gray:before {
+.--ic-fullscreen-icon:before {
   content: "\e902";
 }
 
-.--ic-apps-icon:before {
+.--ic-angle-down-gray:before {
   content: "\e903";
 }
 
-.--ic-play-icon:before {
+.--ic-apps-icon:before {
   content: "\e904";
 }
 
-.--ic-date-icon:before {
+.--ic-play-icon:before {
   content: "\e905";
 }
 
-.--ic-clock-icon:before {
+.--ic-date-icon:before {
   content: "\e906";
 }
 
-.--ic-reject-icon-converted:before {
+.--ic-clock-icon:before {
   content: "\e907";
 }
 
-.--ic-chec-icon:before {
+.--ic-reject-icon-converted:before {
   content: "\e908";
 }
 
-.--ic-remove-friend-icon:before {
+.--ic-chec-icon:before {
   content: "\e909";
 }
 
-.--ic-log-out-icon-black:before {
+.--ic-remove-friend-icon:before {
   content: "\e90a";
 }
 
-.--ic-help-icon-black:before {
+.--ic-log-out-icon-black:before {
   content: "\e90b";
 }
 
-.--ic-replies-icon:before {
+.--ic-help-icon-black:before {
   content: "\e90c";
 }
 
-.--ic-settings-icon:before {
+.--ic-replies-icon:before {
   content: "\e90d";
 }
 
-.--ic-publications-icon:before {
+.--ic-settings-icon:before {
   content: "\e90e";
 }
 
-.--ic-post-it-icon:before {
+.--ic-publications-icon:before {
   content: "\e90f";
 }
 
-.--ic-message-user-icon:before {
+.--ic-post-it-icon:before {
   content: "\e910";
 }
 
-.--ic-add-friend-icon:before {
+.--ic-message-user-icon:before {
   content: "\e911";
 }
 
-.--ic-users-search-icon:before {
+.--ic-add-friend-icon:before {
   content: "\e912";
 }
 
-.--ic-plus-icon:before {
+.--ic-users-search-icon:before {
   content: "\e913";
 }
 
-.--ic-smile-icon:before {
+.--ic-plus-icon:before {
   content: "\e914";
 }
 
-.--ic-file-upload-icon:before {
+.--ic-smile-icon:before {
   content: "\e915";
 }
 
-.--ic-share-icon:before {
+.--ic-file-upload-icon:before {
   content: "\e916";
 }
 
-.--ic-save-icon:before {
+.--ic-share-icon:before {
   content: "\e917";
 }
 
-.--ic-comment-icon:before {
+.--ic-save-icon:before {
   content: "\e918";
 }
 
-.--ic-like-icon:before {
+.--ic-comment-icon:before {
   content: "\e919";
 }
 
-.--ic-dislike-icon:before {
+.--ic-like-icon:before {
   content: "\e91a";
 }
 
-.--ic-new-story-icon:before {
+.--ic-dislike-icon:before {
   content: "\e91b";
 }
 
-.--ic-new-post-icon:before {
+.--ic-new-story-icon:before {
   content: "\e91c";
 }
 
-.--ic-new-photo-icon:before {
+.--ic-new-post-icon:before {
   content: "\e91d";
 }
 
-.--ic-rounded-angle-right:before {
+.--ic-new-photo-icon:before {
   content: "\e91e";
 }
 
-.--ic-sidebar-calendar:before {
+.--ic-rounded-angle-right:before {
   content: "\e91f";
 }
 
-.--ic-sidebar-base-ui:before {
+.--ic-sidebar-calendar:before {
   content: "\e920";
 }
 
-.--ic-sidebar-charts:before {
+.--ic-sidebar-base-ui:before {
   content: "\e921";
 }
 
-.--ic-sidebar-chat:before {
+.--ic-sidebar-charts:before {
   content: "\e922";
 }
 
-.--ic-sidebar-companies:before {
+.--ic-sidebar-chat:before {
   content: "\e923";
 }
 
-.--ic-sidebar-contacts:before {
+.--ic-sidebar-companies:before {
   content: "\e924";
 }
 
-.--ic-sidebar-crm:before {
+.--ic-sidebar-contacts:before {
   content: "\e925";
 }
 
-.--ic-sidebar-dashboard:before {
+.--ic-sidebar-crm:before {
   content: "\e926";
 }
 
-.--ic-sidebar-ecommerce:before {
+.--ic-sidebar-dashboard:before {
   content: "\e927";
 }
 
-.--ic-sidebar-email:before {
+.--ic-sidebar-ecommerce:before {
   content: "\e928";
 }
 
-.--ic-sidebar-extended:before {
+.--ic-sidebar-email:before {
   content: "\e929";
 }
 
-.--ic-sidebar-extra-pages:before {
+.--ic-sidebar-extended:before {
   content: "\e92a";
 }
 
-.--ic-sidebar-feed:before {
+.--ic-sidebar-extra-pages:before {
   content: "\e92b";
 }
 
-.--ic-sidebar-file-manager:before {
+.--ic-sidebar-feed:before {
   content: "\e92c";
 }
 
-.--ic-sidebar-forms:before {
+.--ic-sidebar-file-manager:before {
   content: "\e92d";
 }
 
-.--ic-sidebar-icons:before {
+.--ic-sidebar-forms:before {
   content: "\e92e";
 }
 
-.--ic-sidebar-layouts:before {
+.--ic-sidebar-icons:before {
   content: "\e92f";
 }
 
-.--ic-sidebar-maps:before {
+.--ic-sidebar-layouts:before {
   content: "\e930";
 }
 
-.--ic-sidebar-multi-level:before {
+.--ic-sidebar-maps:before {
   content: "\e931";
 }
 
-.--ic-sidebar-pages:before {
+.--ic-sidebar-multi-level:before {
   content: "\e932";
 }
 
-.--ic-sidebar-projects:before {
+.--ic-sidebar-pages:before {
   content: "\e933";
 }
 
-.--ic-sidebar-tables:before {
+.--ic-sidebar-projects:before {
   content: "\e934";
 }
 
-.--ic-sidebar-tasks:before {
+.--ic-sidebar-tables:before {
   content: "\e935";
 }
 
-.--ic-sidebar-tickets:before {
+.--ic-sidebar-tasks:before {
   content: "\e936";
 }
 
-.--ic-sidebar-widgets:before {
+.--ic-sidebar-tickets:before {
   content: "\e937";
+}
+
+.--ic-sidebar-widgets:before {
+  content: "\e938";
+}
+
+.--ic-settings-icon-black:before {
+  content: "\e939";
+}
+
+.--ic-twitter-monocolor-icon:before {
+  content: "\e93a";
+}
+
+.--ic-instagram-monocolor-icon:before {
+  content: "\e93b";
+}
+
+.--ic-google-monocolor-icon:before {
+  content: "\e93c";
+}
+
+.--ic-facebook-monocolor-icon:before {
+  content: "\e93d";
+}
+
+.--ic-settings-page-icon:before {
+  content: "\e93e";
+}
+
+.--ic-password-eye:before {
+  content: "\e93f";
+}
+
+.--ic-not-visible:before {
+  content: "\e940";
+}
+
+.--ic-visible:before {
+  content: "\e941";
 }
