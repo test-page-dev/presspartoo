@@ -604,6 +604,104 @@ $(function () {
 		});
 	}
 
+	// Radio
+	if ($('.radio').length) {
+
+		// Show and hide player
+		$('.radio__btn').on('click', function () {
+			$(this).toggleClass('is-active')
+			$('.radio__box').toggleClass('is-active');
+			$('.radio__playlist').removeClass('is-active');
+			$('.radio__show-list').removeClass('is-active');
+		});
+
+		// Radio player and controls
+		let $player = $('#my_player');
+
+		// Controls Events
+		$('.controls').on('click', 'a', function (e) {
+			e.preventDefault();
+			let $this = $(this),
+				action = $this.attr('href');
+			if ('#prev' == action) {
+				prev_track($('.playlist'));
+			}
+			if ('#next' == action) {
+				next_track($('.playlist'));
+			}
+			if ('#playpause' == action) {
+				if ($this.hasClass('is-play')) {
+					$this.removeClass('is-play').addClass('is-pause');
+					$player[0].play();
+				} else {
+					$this.removeClass('is-pause').addClass('is-play');
+					$player[0].pause();
+				}
+			}
+			if ('#bck' == action) {
+				$player[0].currentTime -= 15;
+			}
+			if ('#fwd' == action) {
+				$player[0].currentTime += 15;
+			}
+		});
+
+		// Go to next track, when current ended
+		$player.on('ended', function () {
+			next_track($('.playlist'));
+		});
+
+		// Playlist Event
+		$('.playlist').on('click', 'a.audio-link', function (e) {
+			$(this).parents('ul').children('.is-playing').removeClass('is-playing');
+			e.preventDefault();
+			$player[0].pause();
+			$player.attr('src', $(this).attr('href'));
+			$player[0].play();
+			$(this).parent().addClass('is-playing');
+			$('a[href="#playpause"]').removeClass('is-play').addClass('is-pause');
+
+			let thisCover = $(this).find('.radio__playlist-cover img').attr('src');
+			let thisName = $(this).find('.radio__playlist-name').text();
+			let thisWave = $(this).find('.radio__playlist-wave').text();
+
+			$('.radio__img img').attr('src', thisCover);
+			$('.radio__title-name').text(thisName);
+			$('.radio__title-wave').text(thisWave);
+		});
+
+		// Player slider
+		$("#slider").slider({
+			range: "min",
+			min: 0,
+			max: 100,
+			value: 50,
+			slide: function (event, ui) {
+				$player[0].volume = ui.value * 0.01;
+			}
+		});
+
+		// Radio mute
+		$('.radio__volume-button').on('click', function () {
+			$(this).toggleClass('is-active');
+
+			if ($player[0].volume != 0) {
+				$player[0].volume = 0;
+			} else {
+				$player[0].volume = 0.5;
+			}
+		});
+
+		// Playlist show
+		$('.radio__show-list').on('click', function () {
+			$(this).toggleClass('is-active');
+			$('.radio__playlist').toggleClass('is-active');
+		});
+
+	}
+
+
+
 });
 
 

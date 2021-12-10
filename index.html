@@ -8,7 +8,8 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="description" content="#">
 	<title>Keskilya - Main</title>
-	<link rel="stylesheet" href="css/fancy.css">
+	<link rel="stylesheet" href="css/jQuery-ui.css">
+<link rel="stylesheet" href="css/fancy.css">
 <link rel="stylesheet" href="css/icons-font.css">
 <link rel="stylesheet" href="css/swiper.css">
 <link rel="stylesheet" href="css/kalendae.css">
@@ -2293,7 +2294,90 @@
 		</div><!-- .columns__wrap -->
 	</div><!-- .main-container -->
 
+	<div class="radio">
+	<div class="radio__box">
+		<div class="radio__inner">
+
+			<div class="radio__player">
+
+				<div class="radio__info">
+					<div class="radio__img">
+						<img src="img/video/radio-1.png" alt="Radio cover">
+					</div>
+					<div class="radio__title">
+						<span class="radio__title-name">Radio Senegal</span>
+						-
+						<span class="radio__title-wave">DANCE 101,2 FM</span>
+					</div>
+				</div>
+
+				<audio src="http://node-20.zeno.fm/wrh7quprzxquv?rj-ttl=5&rj-tok=AAABfaPdEV0ARFB5BaIe0Eb7Og"
+					id="my_player"></audio>
+
+				<div class="radio__controls controls">
+					<a class="radio__pause is-play" href="#playpause"></a>
+				</div>
+
+				<div class="radio__volume-slider">
+					<div class="radio__volume-button"></div>
+					<div class="radio__slider" id="slider"></div>
+				</div>
+			</div>
+
+			<div class="radio__share">
+				<i class="--ic-share-icon"></i>
+			</div>
+
+			<div class="radio__show-list"></div>
+		</div>
+
+	</div>
+	<ul class="radio__playlist playlist">
+		<li class="audio-link is-playing">
+			<a class="radio__playlist-link audio-link"
+				href="http://node-20.zeno.fm/wrh7quprzxquv?rj-ttl=5&rj-tok=AAABfaPdEV0ARFB5BaIe0Eb7Og">
+				<div class="radio__playlist-cover">
+					<img src="img/video/radio-1.png" alt="Radio cover">
+				</div>
+				<div class="radio__playlist-info">
+					<span class="radio__playlist-name">Radio Senegal</span>
+					<span class="radio__playlist-wave">DANCE 101,22 FM</span>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a class="radio__playlist-link audio-link"
+				href="http://node-20.zeno.fm/wrh7quprzxquv?rj-ttl=5&rj-tok=AAABfaPdEV0ARFB5BaIe0Eb7Og">
+				<div class="radio__playlist-cover">
+					<img src="img/video/radio-1.png" alt="Radio cover">
+				</div>
+				<div class="radio__playlist-info">
+					<span class="radio__playlist-name">Radio Senegal</span>
+					<span class="radio__playlist-wave">DANCE 101,222 FM</span>
+				</div>
+			</a>
+
+		</li>
+		<li>
+			<a class="radio__playlist-link audio-link"
+				href="http://node-20.zeno.fm/wrh7quprzxquv?rj-ttl=5&rj-tok=AAABfaPdEV0ARFB5BaIe0Eb7Og">
+				<div class="radio__playlist-cover">
+					<img src="img/video/1.webp" alt="Radio cover">
+				</div>
+				<div class="radio__playlist-info">
+					<span class="radio__playlist-name">Radio Senegal</span>
+					<span class="radio__playlist-wave">DANCE 101,2222 FM</span>
+				</div>
+			</a>
+			</a>
+		</li>
+	</ul>
+	<div class="radio__btn"></div>
+</div>
+
 	<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="js/jQuery-ui.js"></script>
 <script src="js/fancy.js"></script>
 <script src="js/kalendae.standalone.js"></script>
 <script src="js/plyr.js"></script>
