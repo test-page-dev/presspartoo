@@ -614,13 +614,24 @@ a:hover {
   font-size: 33px;
   font-weight: 700;
   width: 175px;
+  height: 100%;
   flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url(../img/main-logo.svg);
 }
 .header__logo--mobile {
   display: none;
   position: relative;
   z-index: 100;
   flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url(../img/mobile-logo.svg);
+  width: 35px;
+  height: 100%;
 }
 .header__menu-wrap {
   display: flex;
@@ -945,6 +956,64 @@ a:hover {
 .header__settings-border {
   border-bottom: var(--main-border);
   margin-bottom: 23px;
+}
+.header--white {
+  background-color: #fff;
+  color: #69768F;
+}
+.header--white .header__nav {
+  color: var(--main-dark-blue-color);
+}
+.header--white .header__logo {
+  background-image: url(../img/dark-logo.svg);
+}
+.header--white .header__logo--mobile {
+  background-image: url(../img/mobile-logo-dark.svg);
+}
+.header--white .header__nav-create .popup-button::after {
+  background-image: url(../img/icons/angle-dark-down.svg);
+}
+.header--white .header__search {
+  background: #F8F9FC;
+  border-radius: 6px;
+  color: #9498AB;
+}
+.header--white .header__search.is-active {
+  background-color: var(--main-dark-blue-color);
+  border-radius: 0;
+}
+.header--white .header__search input[type=submit] {
+  background-image: url(../img/icons/search-icon-dark.svg);
+}
+.header--white .header__search input[type=text] {
+  color: #9498AB;
+}
+.header--white .header__search input[type=text]::-moz-placeholder {
+  color: #9498AB;
+}
+.header--white .header__search input[type=text]:-ms-input-placeholder {
+  color: #9498AB;
+}
+.header--white .header__search input[type=text]::placeholder {
+  color: #9498AB;
+}
+.header--white .header__search--mobile {
+  background-image: url(../img/icons/search-icon-dark.svg);
+}
+.header--white .header__search--mobile.is-active {
+  background-image: url(../img/icons/search-close-icon.svg);
+}
+.header--white .header__notifications-counter {
+  color: #fff;
+}
+.header--white .header__user::after {
+  background-image: url(../img/icons/angle-down-dark.svg);
+}
+.header--white .user__avatar-img.blue-bg::after {
+  background-color: #fff;
+}
+.header--white .burger__toggle span {
+  background-color: #69768F;
 }
 
 .main__user-box {
