@@ -4102,6 +4102,8 @@ a:hover {
   border-radius: 6px;
   overflow: hidden;
   margin-bottom: 25px;
+  min-height: 262px;
+  display: flex;
 }
 .card__img img {
   border-radius: 6px;
@@ -4164,6 +4166,7 @@ a:hover {
   margin-bottom: 0;
   height: 100%;
   min-width: 171px;
+  min-height: auto;
 }
 .card--horizontal .card__img img {
   -o-object-fit: cover;
