@@ -4102,11 +4102,12 @@ a:hover {
   border-radius: 6px;
   overflow: hidden;
   margin-bottom: 25px;
-  min-height: 262px;
+  min-height: clamp(150px, 15vw, 262px);
   display: flex;
 }
 .card__img img {
   border-radius: 6px;
+  width: 100%;
 }
 .card__text {
   font-size: 16px;
@@ -4171,7 +4172,6 @@ a:hover {
 .card--horizontal .card__img img {
   -o-object-fit: cover;
   object-fit: cover;
-  height: 100%;
 }
 .card--title-top .card__title {
   margin-bottom: 20px;
