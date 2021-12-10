@@ -613,6 +613,7 @@ $(function () {
 			$('.radio__box').toggleClass('is-active');
 			$('.radio__playlist').removeClass('is-active');
 			$('.radio__show-list').removeClass('is-active');
+			$('.radio__share-popup').fadeOut(100);
 		});
 
 		// Radio player and controls
@@ -665,7 +666,7 @@ $(function () {
 			let thisName = $(this).find('.radio__playlist-name').text();
 			let thisWave = $(this).find('.radio__playlist-wave').text();
 
-			$('.radio__img img').attr('src', thisCover);
+			$('.radio__cover img').attr('src', thisCover);
 			$('.radio__title-name').text(thisName);
 			$('.radio__title-wave').text(thisWave);
 		});
@@ -690,6 +691,7 @@ $(function () {
 			} else {
 				$player[0].volume = 0.5;
 			}
+
 		});
 
 		// Playlist show
@@ -698,8 +700,25 @@ $(function () {
 			$('.radio__playlist').toggleClass('is-active');
 		});
 
+
+		// Share button
+		$('.radio__share').on('click', function () {
+			$('.radio__share-popup').fadeToggle();
+		});
+
+		$('.radio__share-link').on('click', function () {
+			$('.radio__share-popup').fadeOut();
+		});
 	}
 
+	const myCarousel = new Carousel(document.querySelector(".carousel"), {
+		// Options
+		Dots: false,
+		slides: [
+			{ 'slidesPerPage': 2 }
+		],
+
+	});
 
 
 });

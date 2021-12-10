@@ -72,6 +72,26 @@
     flex-direction: row;
   }
 }
+@media only screen and (max-width: 1024px) {
+  .radio__volume-slider {
+    display: none;
+  }
+  .radio__playlist {
+    justify-content: flex-start;
+    padding: 15px 90px 15px 25px;
+  }
+  .radio__inner, .radio__player {
+    margin: 0;
+    justify-content: flex-start;
+  }
+  .radio__info {
+    padding-left: 0;
+  }
+  .radio__share-box {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
 /* --- Tablet --- */
 @media only screen and (max-width: 991px) {
   .header__inner {
@@ -228,6 +248,25 @@
 }
 /* --- Mobile Phones M--- */
 @media only screen and (max-width: 575px) {
+  .card--horizontal {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .card--horizontal .card__img {
+    width: 100%;
+    max-height: 200px;
+  }
+  .card--horizontal .card__img img {
+    width: 100%;
+  }
+
+  .radio__info {
+    align-items: flex-start;
+  }
+  .radio__pause {
+    margin: 0 25px 0 20px;
+  }
+
   .template-box {
     flex-direction: column;
   }

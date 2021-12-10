@@ -3963,6 +3963,9 @@ a:hover {
 .columns__wrap-container.two-columns {
   grid-template: 1fr/1fr 1fr;
 }
+.columns__wrap-container.one-column {
+  grid-template: 1fr/1fr;
+}
 .columns__left-inner, .columns__right-inner {
   position: fixed;
   top: 100px;
@@ -4092,6 +4095,105 @@ a:hover {
   font-weight: 400;
   font-size: 14px;
   color: var(--content-color);
+}
+
+/* Cards */
+.card__img {
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+.card__img img {
+  border-radius: 6px;
+}
+.card__text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #585C73;
+}
+.card__button {
+  margin-top: 20px;
+}
+.card__slider {
+  margin-bottom: 25px;
+}
+.card__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #0F1435;
+  margin-top: 15px;
+}
+.card__link a {
+  display: inline-flex;
+  padding-left: 23px;
+  position: relative;
+}
+.card__link a::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url(../img/icons/link-icon.svg);
+}
+.card__slide {
+  width: 100%;
+  padding: 0 10px;
+  overflow: hidden;
+}
+.card__slide img {
+  border-radius: 6px;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.card--horizontal {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 18px;
+}
+.card--horizontal .card__img {
+  margin-bottom: 0;
+  height: 100%;
+  min-width: 171px;
+}
+.card--horizontal .card__img img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 100%;
+}
+.card--title-top .card__title {
+  margin-bottom: 20px;
+}
+.card--gallery {
+  padding: 30px clamp(5px, 1vw, 15px) 35px;
+}
+.card--gallery .card__content {
+  padding: 0 10px;
+}
+.card--gallery .carousel__button {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.card--gallery .carousel__button svg {
+  display: none;
+}
+.card--gallery .carousel__button.is-next {
+  right: 20px;
+  background-image: url(../img/icons/arrow-right.svg);
+}
+.card--gallery .carousel__button.is-prev {
+  left: 20px;
+  background-image: url(../img/icons/arrow-left.svg);
 }
 
 /* File upload and emoji */
@@ -5532,7 +5634,7 @@ a:hover {
 }
 .radio__inner {
   margin: 0 auto;
-  height: 75px;
+  padding: 13px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5542,8 +5644,7 @@ a:hover {
 .radio__btn {
   cursor: pointer;
   display: flex;
-  width: 75px;
-  height: 75px;
+  width: clamp(50px, 6vw, 75px);
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
@@ -5567,12 +5668,13 @@ a:hover {
   cursor: pointer;
   margin-left: auto;
   transition: transform 0.2s;
+  margin-left: clamp(30px, 4vw, 44px);
 }
 .radio__show-list.is-active {
   transform: rotate(180deg);
 }
 .radio__box {
-  padding: 0 10px;
+  padding: 0 15px;
   width: 0px;
   background-color: #0F1435;
   transition: width 1s;
@@ -5587,12 +5689,12 @@ a:hover {
 .radio__info {
   display: flex;
   align-items: center;
-  gap: 18px;
-  padding-left: clamp(0px, 5vw, 55px);
+  gap: clamp(10px, 2vw, 18px);
+  padding-left: clamp(0px, 9vw, 100px);
 }
 .radio__title {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: clamp(12px, 1vw, 16px);
+  line-height: clamp(14px, 1.5vw, 20px);
 }
 .radio__title-name {
   font-weight: 500;
@@ -5600,13 +5702,13 @@ a:hover {
 .radio__title-wave {
   font-weight: 700;
 }
-.radio__img {
-  background-color: #fff;
+.radio__cover {
   border-radius: 6px;
-  width: 49px;
-  height: 49px;
+  width: clamp(30px, 4vw, 49px);
+  height: clamp(30px, 4vw, 49px);
+  flex-shrink: 0;
 }
-.radio__img img {
+.radio__cover img {
   -o-object-fit: cover;
   object-fit: cover;
   height: 100%;
@@ -5620,10 +5722,10 @@ a:hover {
 .radio__pause {
   background-color: #242846;
   border-radius: 6px;
-  width: 49px;
-  height: 49px;
-  margin-left: clamp(30px, 10vw, 85px);
-  margin-right: clamp(30px, 12vw, 185px);
+  width: clamp(30px, 4vw, 49px);
+  height: clamp(30px, 4vw, 49px);
+  margin-left: clamp(10px, 10vw, 85px);
+  margin-right: clamp(10px, 12vw, 185px);
   position: relative;
 }
 .radio__pause::before {
@@ -5636,7 +5738,7 @@ a:hover {
   transform: translate(-50%, -50%);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 12px;
+  background-size: clamp(9px, 1vw, 12px);
   background-image: url(../img/icons/radio-play.svg);
 }
 .radio__pause.is-pause::before {
@@ -5679,7 +5781,59 @@ a:hover {
 .radio__share {
   cursor: pointer;
   font-size: 21px;
+}
+.radio__share-box {
+  position: relative;
   margin-left: clamp(30px, 4vw, 44px);
+  margin-right: auto;
+}
+.radio__share-popup {
+  position: absolute;
+  background-color: #fff;
+  padding: 24px 17px;
+  bottom: 175%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+  display: none;
+}
+.radio__share-popup::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 9px;
+  right: 50%;
+  top: auto;
+  bottom: -16px;
+  border: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+  transform: rotate(180deg) translateX(-50%);
+}
+.radio__share-popup ul {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.radio__share-link {
+  display: inline-flex;
+  width: 15px;
+  height: 17px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.radio__share-item:nth-child(1) a {
+  background-image: url(../img/icons/telegram-icon.svg);
+}
+.radio__share-item:nth-child(2) a {
+  background-image: url(../img/icons/whatsapp-icon.svg);
+}
+.radio__share-item:nth-child(3) a {
+  background-image: url(../img/icons/twitter-icon.svg);
+}
+.radio__share-item:nth-child(4) a {
+  background-image: url(../img/icons/facebook-icon.svg);
 }
 .radio__playlist {
   position: absolute;
@@ -5691,8 +5845,10 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 27px 10px;
-  gap: 40px;
+  padding: 27px 90px 27px 25px;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+  row-gap: 10px;
   transition: bottom 0.5s;
 }
 .radio__playlist.is-active {
@@ -5701,13 +5857,12 @@ a:hover {
 .radio__playlist-link {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: clamp(10px, 1vw, 15px);
 }
 .radio__playlist-cover {
-  background-color: #fff;
   border-radius: 6px;
-  width: 49px;
-  height: 49px;
+  width: clamp(30px, 4vw, 49px);
+  height: clamp(30px, 4vw, 49px);
 }
 .radio__playlist-cover img {
   -o-object-fit: cover;
@@ -5719,8 +5874,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 3px;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: clamp(12px, 1vw, 16px);
+  line-height: clamp(14px, 1.5vw, 20px);
 }
 .radio__playlist-name {
   font-weight: 500;
