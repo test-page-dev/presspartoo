@@ -2983,6 +2983,12 @@ a:hover {
   height: clamp(250px, 25vw, 369px);
   transform: translateY(0px);
 }
+.embed-video iframe {
+  border: 0px;
+  border-width: 0px;
+  width: 100%;
+  height: 100%;
+}
 
 .gallery-controlled {
   height: 410px;

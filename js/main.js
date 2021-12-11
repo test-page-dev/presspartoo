@@ -711,6 +711,7 @@ $(function () {
 		});
 	}
 
+	// Slider in post card
 	const myCarousel = new Carousel(document.querySelector(".carousel"), {
 		// Options
 		Dots: false,
