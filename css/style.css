@@ -4237,9 +4237,6 @@ a:hover {
 .action-dots__popup--block, .action-dots__popup--post, .action-dots__popup--comment {
   padding: 19px 22px 15px;
 }
-.action-dots__popup--block a, .action-dots__popup--post a, .action-dots__popup--comment a {
-  font-weight: 500;
-}
 .action-dots.is-active {
   opacity: 1 !important;
 }
