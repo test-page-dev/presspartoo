@@ -302,33 +302,6 @@ a:hover {
   background: #555;
 }
 
-.action-dots {
-  display: inline-flex;
-  gap: 4px;
-  padding: 11px 8px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: border-color 0.2s;
-  margin-left: auto;
-}
-.action-dots span {
-  display: block;
-  border-radius: 50%;
-  background-color: var(--light-gray-color);
-  width: 4px;
-  height: 4px;
-  transition: background-color 0.2s;
-}
-.action-dots--bordered {
-  border: var(--dots-border);
-}
-.action-dots:hover {
-  border-color: var(--main-green-color);
-}
-.action-dots:hover span {
-  background-color: var(--main-green-color);
-}
-
 .notification-count {
   display: inline-flex;
   align-items: center;
@@ -782,13 +755,6 @@ a:hover {
 .header__apps {
   font-size: 22px;
 }
-.header__notifications {
-  font-size: 23px;
-  cursor: pointer;
-}
-.header__notifications a {
-  display: flex;
-}
 .header__language-wrap {
   position: relative;
 }
@@ -864,7 +830,90 @@ a:hover {
 }
 .header__notifications {
   position: relative;
-  font-style: 25px;
+}
+.header__notifications a {
+  display: flex;
+}
+.header__notifications-button {
+  font-size: 25px;
+  cursor: pointer;
+}
+.header__notifications-popup {
+  position: absolute;
+  top: 60px;
+  background-color: #fff;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 25px 0 0;
+  color: var(--content-color);
+  box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.09);
+  width: clamp(290px, 90vw, 391px);
+  right: -18px;
+}
+.header__notifications-popup-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  color: #9498AB;
+  margin-bottom: 15px;
+  padding: 0 25px;
+}
+.header__notifications-popup-top h4 {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  color: var(--main-dark-blue-color);
+}
+.header__notifications-popup-top a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  transition: color 0.3s;
+}
+.header__notifications-popup-top a:hover {
+  color: var(--main-green-color);
+}
+.header__notifications-list {
+  display: flex;
+  flex-direction: column;
+}
+.header__notifications-photo {
+  border-radius: 6px;
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.header__notifications-photo img {
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+}
+.header__notifications-link {
+  display: flex;
+  gap: 15px;
+  padding: 15px 25px;
+  transition: background-color 0.2s;
+}
+.header__notifications-link:hover {
+  background-color: #F8F9FC;
+}
+.header__notifications-name {
+  padding-top: 7px;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0F1435;
+  margin-bottom: 5px;
+}
+.header__notifications-text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+  color: #585C73;
 }
 .header__notifications-counter {
   display: flex;
@@ -879,6 +928,23 @@ a:hover {
   right: -7px;
   font-weight: 700;
   font-size: 11px;
+}
+.header__notifications-all {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #585C73;
+}
+.header__notifications-all a {
+  padding: 15px 15px 17px;
+  border-top: var(--main-border);
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  transition: color 0.3s;
+}
+.header__notifications-all a:hover {
+  color: var(--main-green-color);
 }
 .header__user {
   cursor: pointer;
@@ -4105,6 +4171,79 @@ a:hover {
   visibility: visible;
 }
 
+.action-dots {
+  display: inline-flex;
+  gap: 4px;
+  padding: 11px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: border-color 0.2s;
+  margin-left: auto;
+}
+.action-dots span {
+  display: block;
+  border-radius: 50%;
+  background-color: var(--light-gray-color);
+  width: 4px;
+  height: 4px;
+  transition: background-color 0.2s;
+}
+.action-dots--bordered {
+  border: var(--dots-border);
+}
+.action-dots:hover {
+  border-color: var(--main-green-color);
+}
+.action-dots:hover span {
+  background-color: var(--main-green-color);
+}
+.action-dots__wrap {
+  position: relative;
+  margin-left: auto;
+}
+.action-dots__popup {
+  display: none;
+  position: absolute;
+  right: -10px;
+  top: 145%;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: clamp(220px, 80vw, 240px);
+  padding: 28px 23px 23px 23px;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--content-color);
+  z-index: 20;
+}
+.action-dots__popup-buttons {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #585C73;
+  font-weight: 400;
+}
+.action-dots__popup-buttons a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.2s;
+}
+.action-dots__popup-buttons a:hover {
+  color: var(--main-green-color);
+}
+.action-dots__popup--block, .action-dots__popup--post, .action-dots__popup--comment {
+  padding: 19px 22px 15px;
+}
+.action-dots__popup--block a, .action-dots__popup--post a, .action-dots__popup--comment a {
+  font-weight: 500;
+}
+.action-dots.is-active {
+  opacity: 1 !important;
+}
+
 /* User box */
 .user__box {
   display: flex;
@@ -4575,6 +4714,14 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  color: var(--light-text-color);
+  transition: color 0.2s;
+}
+.your-groups__top-actions a:hover {
+  color: var(--main-green-color);
 }
 .your-groups__view-all {
   margin-top: 0;
@@ -5117,9 +5264,6 @@ a:hover {
   top: 50px;
 }
 .comments__comment-wrap .action-dots {
-  position: absolute;
-  right: 0;
-  top: 20px;
   opacity: 0;
   transition: opacity 0.3s;
 }
@@ -5549,7 +5693,7 @@ a:hover {
   pointer-events: none;
   transition: opacity 0.2s;
 }
-.friends-box__remove-popup button {
+.friends-box__remove-popup div {
   display: flex;
   align-items: center;
   width: -webkit-max-content;
@@ -5563,7 +5707,7 @@ a:hover {
   font-weight: 400;
   transition: color 0.2s;
 }
-.friends-box__remove-popup button:hover {
+.friends-box__remove-popup div:hover {
   color: var(--main-dark-blue-color);
 }
 .friends-box__remove-friend {

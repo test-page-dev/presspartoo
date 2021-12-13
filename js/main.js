@@ -113,6 +113,7 @@ $(function () {
 			$(this).toggleClass('is-active');
 			$(this).next(popupGlobal).toggleClass('is-active');
 			e.stopPropagation();
+			e.preventDefault();
 		});
 
 		$(document).on('click', function () {
@@ -712,14 +713,40 @@ $(function () {
 	}
 
 	// Slider in post card
-	const myCarousel = new Carousel(document.querySelector(".carousel"), {
-		// Options
-		Dots: false,
-		slides: [
-			{ 'slidesPerPage': 2 }
-		],
+	if ($('.carousel').length) {
+		const myCarousel = new Carousel(document.querySelector(".carousel"), {
+			// Options
+			Dots: false,
+			slides: [
+				{ 'slidesPerPage': 2 }
+			],
 
-	});
+		});
+	}
+
+	// Post action dots
+	if ($('.action-dots').length) {
+		$('.action-dots').on('click', function (e) {
+
+			if (!$(this).hasClass('is-active')) {
+				$('.action-dots').removeClass('is-active');
+				$('.action-dots__popup').fadeOut(200);
+			}
+
+			$(this).toggleClass('is-active');
+			$(this).next('.action-dots__popup').fadeToggle(200);
+			e.stopPropagation();
+		});
+
+		$("body, .action-dots__popup-buttons a").on('click', function (e) {
+			$('.action-dots__popup').fadeOut(200);
+			$('.action-dots').removeClass('is-active');
+		});
+
+		$('.action-dots__popup').on('click', function (e) {
+			e.stopPropagation();
+		});
+	}
 
 
 });

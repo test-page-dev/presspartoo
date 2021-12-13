@@ -286,6 +286,13 @@
 }
 /* --- Mobile Phones M--- */
 @media only screen and (max-width: 575px) {
+  .header__notifications-popup {
+    right: -142px;
+  }
+  .header__notifications-popup::after {
+    right: 142px;
+  }
+
   .card--horizontal {
     flex-direction: column;
     align-items: flex-start;

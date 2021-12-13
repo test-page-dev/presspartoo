@@ -26,6 +26,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.--ic-edit-icon:before {
+  content: "\e94a";
+}
+
+.--ic-delete-icon:before {
+  content: "\e94b";
+}
+
 .--ic-alert-danger:before {
   content: "\e944";
 }
